@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F7D17770-F4EA-31E6-DF09-75501612DF7B" name="TBL_AGRONOMIST">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-14 01:54:38 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="DFF986AF-DB23-C613-3FE9-F0D0251C250A">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-14 02:40:49 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="company_id" id="E4B7F8A7-D485-1807-9794-F8388249220E">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-14 02:40:49 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="person_id" id="1F3FCD8B-E731-C432-A6B3-A4F81D66AC35">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-14 02:40:58 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hiring_date" id="DC2C2580-0278-7035-3245-2CA4C026B747">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-14 02:44:18 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="salary_id (POSIBLE)" id="226C1DD8-E007-F2DF-65EF-BBC41DCA51A7">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-14 02:48:24 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="professional_id***" id="7428B79B-4501-7463-8F7D-04D9D0777705">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-14 03:17:24 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>

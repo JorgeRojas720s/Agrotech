@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelational" name="Relational_1" id="55B9B1DD-623D-65B8-D31D-38B51B73A395">
+<createdBy>jorge</createdBy>
+<modifiedBy>jorge</modifiedBy>
+<createdTime>2025-09-14 01:51:59 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="06D597B2-F8C1-5C9F-8A02-D1CD6C794D6B" otype="Note" vid="7E9206AF-071A-E5A9-2E7C-656AF9F36FCB">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1987" y="446" width="133" height="113"/>
+<comment>Hacer tabla temporal para realizar los &quot;horarios segun la disponibilidad de agronomo y especialidad&quot; y conectar esta tabla temporal con TBL_VISIT</comment>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="08E061F6-9DF9-4933-D678-8137221A485B" otype="Table" vid="4ECDB837-D2CA-0DD4-1609-9ABBBCF86F11">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1330" y="68" width="233" height="124"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="0F2B9CB8-F95A-042F-13BD-9764C8D7CC25" otype="Table" vid="11CCA75A-3044-0D2C-431D-2BA997E6C24F">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="2712" y="267" width="139" height="98"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="313F7E26-0BB3-28A9-39CA-422D1D10B735" otype="Table" vid="1623108E-8A89-0E46-7A55-09F1D0145158">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="2363" y="274" width="136" height="96"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="3EC1FB5B-1CD0-A86D-F0A9-D1D1DE46E384" otype="Table" vid="0FE9375D-203D-6263-810B-84158B27D0AA">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1660" y="630" width="248" height="95"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="48983248-A9F3-58BD-3C76-F735788E33CA" otype="Table" vid="C7447296-9108-5CBE-704B-756906EF46CE">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="2008" y="93" width="216" height="90"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="4C6B2027-9159-41D1-AB0E-E78B49F187DB" otype="Table" vid="04EA7D8F-96D2-6062-1351-02DF1C6F0C88">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1756" y="285" width="218" height="118"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="57ED4368-174B-BA32-2C83-E90EB9219BCC" otype="Table" vid="4A9E1F4F-0DF3-2113-F48F-19D59E55CE92">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1126" y="64" width="178" height="111"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="7D619B3F-F4F5-9808-03CF-C4A8CC01A375" otype="Table" vid="45C94811-8D0E-0D7D-6029-FCC69A2AF0FF">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="811" y="176" width="184" height="114"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="815E6C55-80F3-CD96-9BF4-D27E4933EA32" otype="Table" vid="E7DC3B5B-350F-3734-8D95-9B23E3472F7A">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="2530" y="276" width="136" height="82"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="853CBE01-F60F-7392-7D0B-C699970A9CB1" otype="Table" vid="987E5DAC-F5DD-58E9-23FE-0801A1B47118">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1466" y="446" width="233" height="148"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="8CACE441-2618-902D-C816-11F5890E954C" otype="Table" vid="8D9DFF3C-8171-E0B3-78D2-9D8DE17FC36C">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1717" y="85" width="224" height="110"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="BF21EEC7-3D3C-AD36-AAB2-4E0DF2A93173" otype="Table" vid="3D1B9CFB-C3C5-37FC-7219-C6A5519363B3">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1469" y="274" width="245" height="139"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.TVNote" oid="F59405A0-A1BF-9BB2-7300-906FE6602BED" otype="Note" vid="5BA400CD-6B77-93B9-5F48-B3718C01D544">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1454" y="628" width="172" height="98"/>
+<comment>Quiza hacer una vista materializada para manejar los match de las especialidades cno los agronomos, cada cierto tiempo</comment>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="F7A429E5-53ED-B72C-9F45-54E2D0037F2C" otype="Table" vid="A2293665-B840-0C81-BCC8-ACA7DC51CEB6">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1743" y="444" width="211" height="142"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="F7D17770-F4EA-31E6-DF09-75501612DF7B" otype="Table" vid="7DE24B5D-15F1-8EEE-6E05-31566B00594D">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1160" y="279" width="224" height="121"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="FEA756FB-6310-BA25-1F1F-331E34A6BC59" otype="Table" vid="FC106117-C60D-749E-72E7-6CD79E40498D">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="1650" y="757" width="255" height="92"/>
+</OView>
+</objectViews>
+</Diagram>

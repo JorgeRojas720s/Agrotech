@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8CACE441-2618-902D-C816-11F5890E954C" name="COMPANY_X_SPECIALTIES">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-14 02:33:29 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="company_id" id="79026A9E-18F3-386A-08C4-99CDC20F2665">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-14 02:35:24 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="specialities_id" id="FFCE1B05-59DE-E4D0-8068-64E05BF55ACF">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-14 02:35:24 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9574648E-6DC1-5CC4-C6FC-66AB497F16E0" name="COMPANY_X_SPECIALTIES_PK">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-14 02:35:24 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FFCE1B05-59DE-E4D0-8068-64E05BF55ACF"/>
+<colUsage columnID="79026A9E-18F3-386A-08C4-99CDC20F2665"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

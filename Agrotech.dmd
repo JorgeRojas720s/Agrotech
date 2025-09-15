@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Agrotech" id="A503D0C9-18A0-90DE-E984-47596C56C904" version="3.5">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-14 01:51:48 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>A503D0C9-18A0-90DE-E984-47596C56C904</designId>
+</OSDM_Design>
