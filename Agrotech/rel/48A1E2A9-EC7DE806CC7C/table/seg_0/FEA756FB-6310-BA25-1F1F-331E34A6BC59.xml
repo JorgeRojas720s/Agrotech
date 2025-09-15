@@ -8,7 +8,30 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="id" id="4FCB3393-58CC-E359-34B3-8E17796B10E6">
+<Column name="vis_id" id="4FCB3393-58CC-E359-34B3-8E17796B10E6">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-14 05:05:43 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vis_producer_id" id="C991DF90-A2D4-5646-54CF-A47C37BD1358">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-14 05:05:43 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="14E7F564-4DB9-EDAB-26DD-0284B93AC241" referredColumn="0DA86513-7486-7DEB-0E7F-3EF3F9867EA6"/>
+</associations>
+</Column>
+<Column name="vis_slots" id="AE626831-9C07-3DF2-BEA1-F3AE69506AA6">
 <createdBy>jorge</createdBy>
 <createdTime>2025-09-14 05:05:43 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
@@ -19,29 +42,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="producer_id" id="C991DF90-A2D4-5646-54CF-A47C37BD1358">
-<createdBy>jorge</createdBy>
-<createdTime>2025-09-14 05:05:43 UTC</createdTime>
-<ownerDesignName>Agrotech</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="slots" id="AE626831-9C07-3DF2-BEA1-F3AE69506AA6">
-<createdBy>jorge</createdBy>
-<createdTime>2025-09-14 05:05:43 UTC</createdTime>
-<ownerDesignName>Agrotech</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="attendance" id="0BFD6743-9B82-F6EE-6A5B-F50936E10C01">
+<Column name="vis_attendance" id="0BFD6743-9B82-F6EE-6A5B-F50936E10C01">
 <createdBy>jorge</createdBy>
 <createdTime>2025-09-14 05:13:44 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
@@ -53,5 +54,51 @@
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="vis_available_id" id="99AB06B1-C13D-737D-6188-7138E83ED3E4">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-15 02:28:21 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="72C7B427-FFA8-3608-7E82-F46DF00B4F83" referredColumn="62A9773C-1D8B-6380-3806-56C46D0D5FDE"/>
+</associations>
+</Column>
 </columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="229C661A-5BC4-C087-B26E-73D8A9975128" name="TBL_VISIT_PK">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-15 02:01:14 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4FCB3393-58CC-E359-34B3-8E17796B10E6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E39A82A2-938B-44DE-D07C-2525E982E9BC" name="FK_VIS_AVA">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-15 02:28:56 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99AB06B1-C13D-737D-6188-7138E83ED3E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="093DD879-EFD4-826A-576D-CF7FD5CF104D" name="FK_VIS_PRO">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-15 03:11:33 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C991DF90-A2D4-5646-54CF-A47C37BD1358"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
 </Table>

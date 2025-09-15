@@ -1,0 +1,35 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DE42A815-2194-6625-47DA-F12F078E6830" name="TBL_HISTORY_CROPS">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-15 03:25:09 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<ordsAlias>table_27</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="hic_id" id="B8133A0B-A06A-3D6B-7597-924ED780E084">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-15 03:25:51 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3493B2FC-E14B-ECD4-F996-769D104EDE61" name="TBL_HISTORY_CROPS_PK">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-15 03:25:51 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B8133A0B-A06A-3D6B-7597-924ED780E084"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

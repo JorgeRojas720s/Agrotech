@@ -8,18 +8,17 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="id" id="1BF8B5A5-E2DF-6DF8-353A-EC781DDB0D10">
+<Column name="com_id" id="1BF8B5A5-E2DF-6DF8-353A-EC781DDB0D10">
 <createdBy>jorge</createdBy>
 <createdTime>2025-09-14 02:27:04 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="name" id="5CDAEBB6-03DF-901F-00E5-DE0052411279">
+<Column name="com_name" id="5CDAEBB6-03DF-901F-00E5-DE0052411279">
 <createdBy>jorge</createdBy>
 <createdTime>2025-09-14 02:27:04 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
@@ -30,7 +29,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="owner_id" id="EE4987D3-101F-3BBF-95AA-048B791DFA70">
+<Column name="com_owner_id" id="EE4987D3-101F-3BBF-95AA-048B791DFA70">
 <createdBy>jorge</createdBy>
 <createdTime>2025-09-14 02:27:04 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
@@ -41,29 +40,31 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="address_id" id="FA1EEF9C-DBEA-5643-3C7C-D4323F2AF0A4">
+<Column name="com_address_id" id="FA1EEF9C-DBEA-5643-3C7C-D4323F2AF0A4">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-14 02:27:04 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7983402E-18D3-6494-6178-2C9FF3D0971A" referredColumn="6D188FD3-3C24-6345-3A5A-7204C7BF41D4"/>
+</associations>
+</Column>
+<Column name="com_contact" id="10C91AC6-02AC-678B-0D28-067FBB7B204E">
 <createdBy>jorge</createdBy>
 <createdTime>2025-09-14 02:27:04 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
+<logicalDatatype>LOGDT024</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="contact_information_id" id="10C91AC6-02AC-678B-0D28-067FBB7B204E">
-<createdBy>jorge</createdBy>
-<createdTime>2025-09-14 02:27:04 UTC</createdTime>
-<ownerDesignName>Agrotech</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="foundation_date" id="8D9EF032-2655-2AB0-439F-A97B8AA2062D">
+<Column name="com_foundation_date" id="8D9EF032-2655-2AB0-439F-A97B8AA2062D">
 <createdBy>jorge</createdBy>
 <createdTime>2025-09-14 02:29:22 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
@@ -74,16 +75,28 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="company_X_specialities_id" id="2135B720-0206-9AD9-11EF-3FB0CE2F0C21">
-<createdBy>jorge</createdBy>
-<createdTime>2025-09-14 02:33:22 UTC</createdTime>
-<ownerDesignName>Agrotech</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
 </columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5B4A594B-3292-A0AD-1B2E-E17B9C4063AC" name="TBL_COMPANY_PK">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-15 02:00:32 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1BF8B5A5-E2DF-6DF8-353A-EC781DDB0D10"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="233A6C92-2528-36D4-F188-5BF8BCA323D7" name="FK_COM_ADD">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-15 02:20:53 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FA1EEF9C-DBEA-5643-3C7C-D4323F2AF0A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
 </Table>

@@ -8,7 +8,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="person_id" id="50AECBC2-C67E-923E-EE71-0B6139C6A1E8">
+<Column name="per_id" id="50AECBC2-C67E-923E-EE71-0B6139C6A1E8">
 <createdBy>jorge</createdBy>
 <createdTime>2025-09-14 01:56:45 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
@@ -18,7 +18,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="name" id="1A5CE60C-06DD-E747-E74B-F2807EBDFF96">
+<Column name="per_name" id="1A5CE60C-06DD-E747-E74B-F2807EBDFF96">
 <createdBy>jorge</createdBy>
 <createdTime>2025-09-14 01:58:00 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
@@ -30,7 +30,7 @@
 <ownDataTypeParameters>25,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="lastname" id="6C943E79-E6D8-EF96-32F4-79EF93870398">
+<Column name="per_lastname" id="6C943E79-E6D8-EF96-32F4-79EF93870398">
 <createdBy>jorge</createdBy>
 <createdTime>2025-09-14 01:58:46 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
@@ -42,9 +42,9 @@
 <ownDataTypeParameters>25,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="phone" id="50A05794-8631-3396-4E06-FF5C246D4203">
+<Column name="per_identification" id="7A4F1122-46EB-B756-61F5-B3A5E27BF571">
 <createdBy>jorge</createdBy>
-<createdTime>2025-09-14 02:01:21 UTC</createdTime>
+<createdTime>2025-09-15 01:36:44 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -53,6 +53,66 @@
 <dataTypeSize>25</dataTypeSize>
 <ownDataTypeParameters>25,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="per_marital_status" id="96A42ADA-3383-9559-8691-C21774A6B4F2">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-15 01:41:26 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="per_gender" id="77C49036-1AB9-61E7-8075-6800AFF70AFD">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-15 01:45:14 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="per_birthday" id="D5AD7BC9-8081-8ACD-4E51-F7B1CB79CC6F">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-15 01:47:59 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="per_education_level" id="AE50814B-3981-1A47-BFD6-C927369D1859">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-15 01:49:02 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="per_nationality_id" id="9A79369C-702E-0488-5E99-71B5779A8313">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-15 02:33:02 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7361AC0C-1CD5-9B27-689F-C33CF6587AF5" referredColumn="3E1496A2-16D8-70E4-0C8E-96A62BD99737"/>
+</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
@@ -65,6 +125,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="50AECBC2-C67E-923E-EE71-0B6139C6A1E8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="96E7439B-359F-7A43-6F39-2B3337B07BBD" name="FK_PER_NAT">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-15 02:33:31 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9A79369C-702E-0488-5E99-71B5779A8313"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

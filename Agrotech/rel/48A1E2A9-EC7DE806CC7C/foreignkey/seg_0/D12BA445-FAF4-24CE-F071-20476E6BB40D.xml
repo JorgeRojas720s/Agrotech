@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D12BA445-FAF4-24CE-F071-20476E6BB40D" containerWithKeyObject="F7D17770-F4EA-31E6-DF09-75501612DF7B" localFKIndex="D7D681C3-F08B-5336-101E-B5A9053937C8" name="FK_AGR_PER">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-15 02:17:27 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<referredTableLongName>TBL_PERSON</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>57ED4368-174B-BA32-2C83-E90EB9219BCC</referredTableID>
+<keyObject>8FFBCEC1-567E-F13B-9E72-BCB0267845AB</keyObject>
+<referredKeyID>8FFBCEC1-567E-F13B-9E72-BCB0267845AB</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>per_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

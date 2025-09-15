@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F9BA871E-9100-1C57-1AD3-4FC2E80D95D3" name="TBL_CONTACT">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-15 01:50:18 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<ordsAlias>table_17</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="con_id" id="D2F8D78C-6D75-EA36-C0A8-C62E8CD13E20">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-15 01:51:32 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="con_type" id="006D889D-4FDF-A4AC-41CD-DC038CA4E61F">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-15 01:54:26 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="con_contact" id="59BED6A8-2983-61A0-5130-3C600C2678F7">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-15 01:54:26 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="con_person_id" id="FBD26CC4-ECC0-82B0-8AC7-135E386E8F86">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-15 02:03:46 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5A2A3527-7D94-CEB8-A34B-C6704610272C" referredColumn="50AECBC2-C67E-923E-EE71-0B6139C6A1E8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A17E640B-5188-9E9E-DAB9-FDC19884B2DA" name="TBL_CONTACT_PK">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-15 02:00:27 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D2F8D78C-6D75-EA36-C0A8-C62E8CD13E20"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4603F7C4-A999-70F2-8BB8-09C726830F40" name="FK_CON_PER">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-15 02:06:51 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FBD26CC4-ECC0-82B0-8AC7-135E386E8F86"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

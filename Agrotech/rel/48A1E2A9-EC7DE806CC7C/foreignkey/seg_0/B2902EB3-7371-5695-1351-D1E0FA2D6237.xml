@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B2902EB3-7371-5695-1351-D1E0FA2D6237" containerWithKeyObject="767C4789-23BE-C86D-19E4-1159E094B623" localFKIndex="DF29511C-9842-22F0-FEBA-29353A45BEE5" name="FK_TEF_CER">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-15 03:31:16 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<referredTableLongName>TBL_CERTFICATIONS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BA35C6CD-17B7-89D6-3A8D-0FE93C03E47A</referredTableID>
+<keyObject>E6BB08BB-82AC-6C50-0260-1E9B8AED599D</keyObject>
+<referredKeyID>E6BB08BB-82AC-6C50-0260-1E9B8AED599D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cer_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

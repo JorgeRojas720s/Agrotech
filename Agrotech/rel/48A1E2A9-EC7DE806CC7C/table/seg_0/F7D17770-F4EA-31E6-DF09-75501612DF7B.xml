@@ -8,40 +8,43 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="id" id="DFF986AF-DB23-C613-3FE9-F0D0251C250A">
+<Column name="agr_id" id="DFF986AF-DB23-C613-3FE9-F0D0251C250A">
 <createdBy>jorge</createdBy>
 <createdTime>2025-09-14 02:40:49 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="company_id" id="E4B7F8A7-D485-1807-9794-F8388249220E">
+<Column name="agr_company_id" id="E4B7F8A7-D485-1807-9794-F8388249220E">
 <createdBy>jorge</createdBy>
 <createdTime>2025-09-14 02:40:49 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="391CBAB0-C108-AF50-8161-2E49FC54CC85" referredColumn="1BF8B5A5-E2DF-6DF8-353A-EC781DDB0D10"/>
+</associations>
 </Column>
-<Column name="person_id" id="1F3FCD8B-E731-C432-A6B3-A4F81D66AC35">
+<Column name="agr_person_id" id="1F3FCD8B-E731-C432-A6B3-A4F81D66AC35">
 <createdBy>jorge</createdBy>
 <createdTime>2025-09-14 02:40:58 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D12BA445-FAF4-24CE-F071-20476E6BB40D" referredColumn="50AECBC2-C67E-923E-EE71-0B6139C6A1E8"/>
+</associations>
 </Column>
-<Column name="hiring_date" id="DC2C2580-0278-7035-3245-2CA4C026B747">
+<Column name="agr_hiring_date" id="DC2C2580-0278-7035-3245-2CA4C026B747">
 <createdBy>jorge</createdBy>
 <createdTime>2025-09-14 02:44:18 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
@@ -52,7 +55,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="salary_id (POSIBLE)" id="226C1DD8-E007-F2DF-65EF-BBC41DCA51A7">
+<Column name="agr_salary_id (POSIBLE)" id="226C1DD8-E007-F2DF-65EF-BBC41DCA51A7">
 <createdBy>jorge</createdBy>
 <createdTime>2025-09-14 02:48:24 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
@@ -62,7 +65,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="professional_id***" id="7428B79B-4501-7463-8F7D-04D9D0777705">
+<Column name="agr_professional_id***" id="7428B79B-4501-7463-8F7D-04D9D0777705">
 <createdBy>jorge</createdBy>
 <createdTime>2025-09-14 03:17:24 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
@@ -74,4 +77,37 @@
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="030A30BC-09BC-41E4-B2B4-6E317EA7DF26" name="TBL_AGRONOMIST_PK">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-15 02:00:53 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DFF986AF-DB23-C613-3FE9-F0D0251C250A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="833E4673-351D-1941-7359-E22721AAAED1" name="FK_AGR_COM">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-15 02:16:53 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E4B7F8A7-D485-1807-9794-F8388249220E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D7D681C3-F08B-5336-101E-B5A9053937C8" name="FK_AGR_PER">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-15 02:17:27 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1F3FCD8B-E731-C432-A6B3-A4F81D66AC35"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
 </Table>

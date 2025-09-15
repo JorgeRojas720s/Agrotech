@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="48983248-A9F3-58BD-3C76-F735788E33CA" name="TBL_SPECIALITIES">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B44BB10E-956A-0F1D-5686-ADC9109633BB" name="TBL_TREATMENTS">
 <createdBy>jorge</createdBy>
-<createdTime>2025-09-14 02:35:30 UTC</createdTime>
+<createdTime>2025-09-15 03:26:23 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
-<ordsAlias>table_11</ordsAlias>
+<ordsAlias>table_28</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="spe_id" id="1A5BC2C0-C822-BC8A-CDA1-5358508391E0">
+<Column name="tre_id" id="66B2C28D-14FD-E3CD-4361-5C1D5D6BC105">
 <createdBy>jorge</createdBy>
-<createdTime>2025-09-14 02:36:48 UTC</createdTime>
+<createdTime>2025-09-15 03:27:17 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -18,41 +18,39 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="spe_type" id="4013296F-133F-66D9-452B-F2749918AAE4">
+<Column name="tre_treatment_type" id="10A2A186-38CF-3890-11B1-3FBE49423A81">
 <createdBy>jorge</createdBy>
-<createdTime>2025-09-14 02:36:48 UTC</createdTime>
+<createdTime>2025-09-15 03:32:14 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>30</dataTypeSize>
-<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="spe_description" id="30D0D85E-827F-B10B-0FE7-377D1AE7091E">
+<Column name="tre_name" id="26D4BEE1-BE61-31E9-FC8A-EF602FDFF571">
 <createdBy>jorge</createdBy>
-<createdTime>2025-09-14 02:36:48 UTC</createdTime>
+<createdTime>2025-09-15 03:32:14 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>200</dataTypeSize>
-<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="DC556CC1-F815-AC3F-A9A5-CCEB62E4FF42" name="TBL_SPECIALITIES_PK">
+<ind_PK_UK id="EEA0505C-B1FF-1109-E229-B9F78A3FFFC6" name="TBL_TREATMENTS_PK">
 <createdBy>jorge</createdBy>
-<createdTime>2025-09-15 02:00:40 UTC</createdTime>
+<createdTime>2025-09-15 03:29:11 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="1A5BC2C0-C822-BC8A-CDA1-5358508391E0"/>
+<colUsage columnID="66B2C28D-14FD-E3CD-4361-5C1D5D6BC105"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

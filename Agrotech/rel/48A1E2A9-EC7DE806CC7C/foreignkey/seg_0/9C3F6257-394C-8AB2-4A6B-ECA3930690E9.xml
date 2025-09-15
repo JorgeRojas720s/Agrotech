@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9C3F6257-394C-8AB2-4A6B-ECA3930690E9" containerWithKeyObject="767C4789-23BE-C86D-19E4-1159E094B623" localFKIndex="ACFD9205-BD6E-1AA7-54F4-601328251570" name="FK_TEF_HIC">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-15 03:31:16 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<referredTableLongName>TBL_HISTORY_CROPS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>DE42A815-2194-6625-47DA-F12F078E6830</referredTableID>
+<keyObject>3493B2FC-E14B-ECD4-F996-769D104EDE61</keyObject>
+<referredKeyID>3493B2FC-E14B-ECD4-F996-769D104EDE61</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>hic_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

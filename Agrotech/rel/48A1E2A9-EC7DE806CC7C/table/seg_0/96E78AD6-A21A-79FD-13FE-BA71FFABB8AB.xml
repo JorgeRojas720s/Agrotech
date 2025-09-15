@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3EC1FB5B-1CD0-A86D-F0A9-D1D1DE46E384" name="TBL_AVAILABILITY">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="96E78AD6-A21A-79FD-13FE-BA71FFABB8AB" name="TBL_CANCELLED_HISTORY">
 <createdBy>jorge</createdBy>
-<createdTime>2025-09-14 05:28:33 UTC</createdTime>
+<createdTime>2025-09-15 02:49:38 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
-<ordsAlias>table_20</ordsAlias>
+<ordsAlias>table_23</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="ava_id" id="62A9773C-1D8B-6380-3806-56C46D0D5FDE">
+<Column name="cah_id" id="6AC3DE7E-63DE-3947-752A-1DE193A75BA9">
 <createdBy>jorge</createdBy>
-<createdTime>2025-09-14 05:34:46 UTC</createdTime>
+<createdTime>2025-09-15 02:56:52 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -18,22 +18,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="ava_schedule_agronomist_id" id="88177AEE-D951-A259-7E19-6F16AB6D6F3B">
+<Column name="cah_availaty_id" id="1D12811C-8206-BC28-9238-6A326199C02F">
 <createdBy>jorge</createdBy>
-<createdTime>2025-09-14 05:34:46 UTC</createdTime>
-<ownerDesignName>Agrotech</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="984CF908-9614-E577-20A9-72CA3FDFD292" referredColumn="19568183-C37B-4EDB-51FC-0018C967690C"/>
-</associations>
-</Column>
-<Column name="ava_schedule_specialite_id" id="90ED7340-FA6F-8513-C330-73ED8D3704DA">
-<createdBy>jorge</createdBy>
-<createdTime>2025-09-14 05:34:46 UTC</createdTime>
+<createdTime>2025-09-15 02:56:52 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -41,52 +28,53 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="4B692A24-4419-AAD3-B9AC-CE737B7D7D10" referredColumn="7C0010B3-6A6E-607A-E1A4-C08795957D34"/>
+<colAssociation fkAssociation="F9E88311-6D27-6555-7313-6EBDA0A82C2E" referredColumn="62A9773C-1D8B-6380-3806-56C46D0D5FDE"/>
 </associations>
 </Column>
-<Column name="ava_available" id="2E6FF44A-D8E2-6D0A-B61E-3C8779925494">
+<Column name="cah_visit_id" id="8D7D7214-B374-F968-158A-9426FBA1895B">
 <createdBy>jorge</createdBy>
-<createdTime>2025-09-14 05:36:21 UTC</createdTime>
+<createdTime>2025-09-15 03:06:29 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT025</logicalDatatype>
-<dataTypeSize>1</dataTypeSize>
-<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D762A1A6-9F43-67EC-0054-B59F2E1D94E9" referredColumn="4FCB3393-58CC-E359-34B3-8E17796B10E6"/>
+</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="64C038C9-7DC6-CC5F-2D4E-9228B517A49C" name="TBL_AVAILABILITY_PK">
+<ind_PK_UK id="5AF6D65E-89F6-0699-C68C-E3FFC8810B4D" name="TBL_CANCELLED_HISTORY_PK">
 <createdBy>jorge</createdBy>
-<createdTime>2025-09-15 02:01:06 UTC</createdTime>
+<createdTime>2025-09-15 02:56:53 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="62A9773C-1D8B-6380-3806-56C46D0D5FDE"/>
+<colUsage columnID="6AC3DE7E-63DE-3947-752A-1DE193A75BA9"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="A9778EB6-7E90-F788-02AC-39FA0C856391" name="FK_AVA_SCA">
+<ind_PK_UK id="4373A829-E645-5701-3C77-6F3EF041D3F9" name="FK_CAH_VIS">
 <createdBy>jorge</createdBy>
-<createdTime>2025-09-15 02:30:44 UTC</createdTime>
+<createdTime>2025-09-15 03:08:06 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="88177AEE-D951-A259-7E19-6F16AB6D6F3B"/>
+<colUsage columnID="8D7D7214-B374-F968-158A-9426FBA1895B"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="DFEB984F-96D6-EEEA-D56E-A9BAE556ACDF" name="FK_AVA_SCS">
+<ind_PK_UK id="6D8CE99A-E563-65AB-E021-57D60BE79159" name="FK_CAH_AVA">
 <createdBy>jorge</createdBy>
-<createdTime>2025-09-15 02:31:54 UTC</createdTime>
+<createdTime>2025-09-15 03:08:27 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="90ED7340-FA6F-8513-C330-73ED8D3704DA"/>
+<colUsage columnID="1D12811C-8206-BC28-9238-6A326199C02F"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

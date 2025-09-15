@@ -8,7 +8,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="id" id="19568183-C37B-4EDB-51FC-0018C967690C">
+<Column name="sca_id" id="19568183-C37B-4EDB-51FC-0018C967690C">
 <createdBy>jorge</createdBy>
 <createdTime>2025-09-14 03:32:44 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
@@ -18,18 +18,20 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="agronomist_id" id="50DD657D-5EA7-4BB0-D306-C0B3F6323DD4">
+<Column name="sca_agronomist_id" id="50DD657D-5EA7-4BB0-D306-C0B3F6323DD4">
 <createdBy>jorge</createdBy>
 <createdTime>2025-09-14 03:32:44 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="79AD467D-AB7F-5A3F-F9B8-F90C82E7AD70" referredColumn="DFF986AF-DB23-C613-3FE9-F0D0251C250A"/>
+</associations>
 </Column>
-<Column name="date" id="D31B858E-C18D-C248-B65C-5636BE53A094">
+<Column name="sca_date" id="D31B858E-C18D-C248-B65C-5636BE53A094">
 <createdBy>jorge</createdBy>
 <createdTime>2025-09-14 03:32:44 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
@@ -40,7 +42,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="start_time" id="9F84F4BB-8BB4-85EB-B5C9-4C8BCE129679">
+<Column name="sca_start_time" id="9F84F4BB-8BB4-85EB-B5C9-4C8BCE129679">
 <createdBy>jorge</createdBy>
 <createdTime>2025-09-14 03:32:44 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
@@ -52,7 +54,7 @@
 <ownDataTypeParameters>,3,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="end_time" id="9D789536-8AE4-3D3B-A6B1-A132AB608870">
+<Column name="sca_end_time" id="9D789536-8AE4-3D3B-A6B1-A132AB608870">
 <createdBy>jorge</createdBy>
 <createdTime>2025-09-14 03:32:44 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
@@ -64,7 +66,7 @@
 <ownDataTypeParameters>,3,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="visit_time" id="2001BB6A-97C8-F7AD-6D2C-FBDC77BBAE2F">
+<Column name="sca_visit_time" id="2001BB6A-97C8-F7AD-6D2C-FBDC77BBAE2F">
 <createdBy>jorge</createdBy>
 <createdTime>2025-09-14 04:34:35 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
@@ -88,6 +90,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="19568183-C37B-4EDB-51FC-0018C967690C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1EB8D9B4-76CA-B08A-FCC2-2025C262396F" name="FK_SCA_AGR">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-15 02:18:24 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="50DD657D-5EA7-4BB0-D306-C0B3F6323DD4"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

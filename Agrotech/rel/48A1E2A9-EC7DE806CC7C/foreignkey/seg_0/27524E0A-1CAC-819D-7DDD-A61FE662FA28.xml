@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="27524E0A-1CAC-819D-7DDD-A61FE662FA28" containerWithKeyObject="767C4789-23BE-C86D-19E4-1159E094B623" localFKIndex="3D892BE5-7095-FB4B-F2E0-A5B10C2D190B" name="FK_TEF_TRE">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-15 03:31:16 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<referredTableLongName>TBL_TREATMENTS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B44BB10E-956A-0F1D-5686-ADC9109633BB</referredTableID>
+<keyObject>EEA0505C-B1FF-1109-E229-B9F78A3FFFC6</keyObject>
+<referredKeyID>EEA0505C-B1FF-1109-E229-B9F78A3FFFC6</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>tre_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
