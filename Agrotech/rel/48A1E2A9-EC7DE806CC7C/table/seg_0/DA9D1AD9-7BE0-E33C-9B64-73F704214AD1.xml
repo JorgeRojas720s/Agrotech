@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DE42A815-2194-6625-47DA-F12F078E6830" name="TBL_HISTORY_CROPS">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DA9D1AD9-7BE0-E33C-9B64-73F704214AD1" name="TBL_CLIMATIC_CONDITIONS">
 <createdBy>jorge</createdBy>
-<createdTime>2025-09-15 03:25:09 UTC</createdTime>
+<createdTime>2025-09-21 03:23:20 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
-<ordsAlias>table_27</ordsAlias>
+<ordsAlias>table_30</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="hic_id" id="B8133A0B-A06A-3D6B-7597-924ED780E084">
+<Column name="clc_id" id="F594E314-DC1F-280A-83BB-32083B846204">
 <createdBy>jorge</createdBy>
-<createdTime>2025-09-15 03:25:51 UTC</createdTime>
+<createdTime>2025-09-21 03:40:50 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -18,9 +18,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="hic_farm_id" id="C72E4F02-999D-7AFA-E934-93353C4B1881">
+<Column name="clc_environmental_data_id" id="B2C13C56-F508-CBE0-58C3-E554778D907C">
 <createdBy>jorge</createdBy>
-<createdTime>2025-09-22 01:22:22 UTC</createdTime>
+<createdTime>2025-09-21 03:47:29 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -28,30 +28,30 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="9FCB74F9-158F-EBE3-10AA-9157EEC82175" referredColumn="BA72D4F7-2C25-23C6-3289-0791F92772CF"/>
+<colAssociation fkAssociation="B1819708-4185-7B6F-7B7A-47D31E2F9D72" referredColumn="6D410A8C-24C9-BE44-FCDB-B1D9135CADFE"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="3493B2FC-E14B-ECD4-F996-769D104EDE61" name="TBL_HISTORY_CROPS_PK">
+<ind_PK_UK id="E54FC9A8-7A05-AF8E-9515-0061CCDFB8B3" name="TBL_CLIMATIC_CONDITIONS_PK">
 <createdBy>jorge</createdBy>
-<createdTime>2025-09-15 03:25:51 UTC</createdTime>
+<createdTime>2025-09-21 03:41:13 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="B8133A0B-A06A-3D6B-7597-924ED780E084"/>
+<colUsage columnID="F594E314-DC1F-280A-83BB-32083B846204"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="E97DF1F1-90F3-C319-7C56-E8AA6F0D2737" name="FK_FAR_HIC">
+<ind_PK_UK id="1A6CC9E1-7583-3C1C-69B8-73EDA7D5A4D3" name="FK_END_CLC">
 <createdBy>jorge</createdBy>
-<createdTime>2025-09-22 01:23:24 UTC</createdTime>
+<createdTime>2025-09-21 03:47:56 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="C72E4F02-999D-7AFA-E934-93353C4B1881"/>
+<colUsage columnID="B2C13C56-F508-CBE0-58C3-E554778D907C"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

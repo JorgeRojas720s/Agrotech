@@ -18,16 +18,18 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="tre_treatment_type" id="10A2A186-38CF-3890-11B1-3FBE49423A81">
+<Column name="tre_treatment_type_id" id="10A2A186-38CF-3890-11B1-3FBE49423A81">
 <createdBy>jorge</createdBy>
 <createdTime>2025-09-15 03:32:14 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="71880C77-E4D1-41AB-2099-EA97F314CD9B" referredColumn="AD038796-5C56-463C-B58F-B85E799F2F37"/>
+</associations>
 </Column>
 <Column name="tre_name" id="26D4BEE1-BE61-31E9-FC8A-EF602FDFF571">
 <createdBy>jorge</createdBy>
@@ -51,6 +53,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="66B2C28D-14FD-E3CD-4361-5C1D5D6BC105"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FB7B2D09-DD4E-72EC-D996-634C3A45640D" name="FK_TRE_TRT">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-22 02:22:07 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="10A2A186-38CF-3890-11B1-3FBE49423A81"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BA31A043-E9A8-C44E-3B4A-B6DE83B4C0F3" name="TBL_NACIONALITIES">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B4156AE0-1AB7-74FF-4ACC-FD213CC70958" name="TBL_CROPS_TYPE">
 <createdBy>jorge</createdBy>
-<createdTime>2025-09-15 01:55:34 UTC</createdTime>
+<createdTime>2025-09-21 04:14:28 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
-<ordsAlias>table_18</ordsAlias>
+<ordsAlias>table_35</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="nan_id" id="3E1496A2-16D8-70E4-0C8E-96A62BD99737">
+<Column name="crt_id" id="0FD52DF3-D70C-B1EC-E8EC-F95C21325CAC">
 <createdBy>jorge</createdBy>
-<createdTime>2025-09-15 01:58:11 UTC</createdTime>
+<createdTime>2025-09-21 04:17:30 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -18,29 +18,29 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="nan_nationality" id="883C9095-5829-86F6-EB05-864E961EE49D">
+<Column name="crt_type" id="168F082F-CEE0-D396-00D0-78DE337C5443">
 <createdBy>jorge</createdBy>
-<createdTime>2025-09-15 01:58:11 UTC</createdTime>
+<createdTime>2025-09-22 01:49:10 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>40</dataTypeSize>
-<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="159F2BB6-AEB8-4C1A-6AF4-FE6C41C36E76" name="TBL_NACIONALITY_PK">
+<ind_PK_UK id="76F10219-B5DC-F62C-57AA-B07E6BD06780" name="TBL_CROPS_TYPE_PK">
 <createdBy>jorge</createdBy>
-<createdTime>2025-09-15 02:00:21 UTC</createdTime>
+<createdTime>2025-09-21 04:18:02 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="3E1496A2-16D8-70E4-0C8E-96A62BD99737"/>
+<colUsage columnID="0FD52DF3-D70C-B1EC-E8EC-F95C21325CAC"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

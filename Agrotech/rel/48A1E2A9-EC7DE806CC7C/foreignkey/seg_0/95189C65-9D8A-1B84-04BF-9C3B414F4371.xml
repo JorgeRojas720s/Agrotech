@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="27524E0A-1CAC-819D-7DDD-A61FE662FA28" containerWithKeyObject="767C4789-23BE-C86D-19E4-1159E094B623" localFKIndex="3D892BE5-7095-FB4B-F2E0-A5B10C2D190B" name="FK_TEF_TRE">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="95189C65-9D8A-1B84-04BF-9C3B414F4371" containerWithKeyObject="1102B5B5-915F-EFDE-8E6F-2962200C87C9" localFKIndex="A6D3211D-BB38-C509-CEA8-31C671EE07AC" name="FK_TRE_X_TEF">
 <createdBy>jorge</createdBy>
-<createdTime>2025-09-15 03:31:16 UTC</createdTime>
+<createdTime>2025-09-21 05:32:57 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
 <referredTableLongName>TBL_TREATMENTS</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>

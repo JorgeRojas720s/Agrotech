@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F7D17770-F4EA-31E6-DF09-75501612DF7B" name="TBL_AGRONOMISTS">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0981B3BD-213F-5C8B-DC0D-53B4B0CC8BC2" name="TBL_FIELD_INSPECTIONS">
 <createdBy>jorge</createdBy>
-<createdTime>2025-09-14 01:54:38 UTC</createdTime>
+<createdTime>2025-09-22 01:31:46 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
-<ordsAlias>table_4</ordsAlias>
+<ordsAlias>table_38</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="agr_id" id="DFF986AF-DB23-C613-3FE9-F0D0251C250A">
+<Column name="fii_id" id="630340BC-25A3-1B66-44F5-EF2F4362437E">
 <createdBy>jorge</createdBy>
-<createdTime>2025-09-14 02:40:49 UTC</createdTime>
+<createdTime>2025-09-22 01:32:48 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -18,59 +18,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="agr_company_id" id="E4B7F8A7-D485-1807-9794-F8388249220E">
+<Column name="fii_soil_ph" id="55FD5078-A019-C8EE-23D1-9C2F8D52AFED">
 <createdBy>jorge</createdBy>
-<createdTime>2025-09-14 02:40:49 UTC</createdTime>
-<ownerDesignName>Agrotech</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="391CBAB0-C108-AF50-8161-2E49FC54CC85" referredColumn="1BF8B5A5-E2DF-6DF8-353A-EC781DDB0D10"/>
-</associations>
-</Column>
-<Column name="agr_person_id" id="1F3FCD8B-E731-C432-A6B3-A4F81D66AC35">
-<createdBy>jorge</createdBy>
-<createdTime>2025-09-14 02:40:58 UTC</createdTime>
-<ownerDesignName>Agrotech</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="D12BA445-FAF4-24CE-F071-20476E6BB40D" referredColumn="50AECBC2-C67E-923E-EE71-0B6139C6A1E8"/>
-</associations>
-</Column>
-<Column name="agr_hiring_date" id="DC2C2580-0278-7035-3245-2CA4C026B747">
-<createdBy>jorge</createdBy>
-<createdTime>2025-09-14 02:44:18 UTC</createdTime>
-<ownerDesignName>Agrotech</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT015</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-</Column>
-<Column name="agr_salary_id" id="226C1DD8-E007-F2DF-65EF-BBC41DCA51A7">
-<createdBy>jorge</createdBy>
-<createdTime>2025-09-14 02:48:24 UTC</createdTime>
-<ownerDesignName>Agrotech</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="BFD6ACE1-CB49-1EED-EBA0-D8410B89F326" referredColumn="D8194160-C680-15BC-810B-B2F3B0D82545"/>
-</associations>
-</Column>
-<Column name="agr_professional_id" id="7428B79B-4501-7463-8F7D-04D9D0777705">
-<createdBy>jorge</createdBy>
-<createdTime>2025-09-14 03:17:24 UTC</createdTime>
+<createdTime>2025-09-22 01:37:22 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -78,48 +28,100 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fii_humidity" id="D4C8C6BF-83A5-DF01-0F02-EE3A6DD75D8B">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-22 01:37:22 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fii_ambient_temperature" id="7F142E0A-1369-8A04-1281-69B7760DB04E">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-22 01:37:22 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fii_nutrient_level" id="753AEB2A-8FCD-9A91-BB76-442F2AB14F2F">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-22 01:37:22 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fii_crops_id" id="05D39840-F243-8B0F-2515-B3203AE1301C">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-22 01:38:45 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="576DB7FA-C766-9985-B7AB-ACAB3A328EB9" referredColumn="9DB791D4-6A7C-82A9-5184-9BAC7356D6D5"/>
+</associations>
+</Column>
+<Column name="fii_agronomists_id" id="6CDF6327-337A-74EC-8124-CB4773BA28F3">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-22 01:40:15 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4DC25F48-F165-D041-B3A0-F6FCCEBD21EF" referredColumn="DFF986AF-DB23-C613-3FE9-F0D0251C250A"/>
+</associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="030A30BC-09BC-41E4-B2B4-6E317EA7DF26" name="TBL_AGRONOMIST_PK">
+<ind_PK_UK id="E6D1AE00-743C-2F2C-1409-CFE43B1FC2B1" name="TBL_FIELD_INSPECTION_PK">
 <createdBy>jorge</createdBy>
-<createdTime>2025-09-15 02:00:53 UTC</createdTime>
+<createdTime>2025-09-22 01:38:04 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="DFF986AF-DB23-C613-3FE9-F0D0251C250A"/>
+<colUsage columnID="630340BC-25A3-1B66-44F5-EF2F4362437E"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="833E4673-351D-1941-7359-E22721AAAED1" name="FK_AGR_COM">
+<ind_PK_UK id="8C933C38-81B7-6A45-0360-E34BBBBE0395" name="FK_FII_CRO">
 <createdBy>jorge</createdBy>
-<createdTime>2025-09-15 02:16:53 UTC</createdTime>
+<createdTime>2025-09-22 01:39:08 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="E4B7F8A7-D485-1807-9794-F8388249220E"/>
+<colUsage columnID="05D39840-F243-8B0F-2515-B3203AE1301C"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="D7D681C3-F08B-5336-101E-B5A9053937C8" name="FK_AGR_PER">
+<ind_PK_UK id="9E874ED9-F609-859C-8727-68637463FD02" name="FK_FII_AGR">
 <createdBy>jorge</createdBy>
-<createdTime>2025-09-15 02:17:27 UTC</createdTime>
+<createdTime>2025-09-22 01:41:50 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="1F3FCD8B-E731-C432-A6B3-A4F81D66AC35"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="4A0B3FEC-DDE3-2592-4239-F2EBB543C3E0" name="FK_AGR_SAL">
-<createdBy>jorge</createdBy>
-<createdTime>2025-09-22 02:05:36 UTC</createdTime>
-<ownerDesignName>Agrotech</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="226C1DD8-E007-F2DF-65EF-BBC41DCA51A7"/>
+<colUsage columnID="6CDF6327-337A-74EC-8124-CB4773BA28F3"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

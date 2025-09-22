@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DE42A815-2194-6625-47DA-F12F078E6830" name="TBL_HISTORY_CROPS">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5A948433-84CC-7191-97A0-45C12DC80CE9" name="TBL_LABORATORY_ANALYSIS">
 <createdBy>jorge</createdBy>
-<createdTime>2025-09-15 03:25:09 UTC</createdTime>
+<createdTime>2025-09-21 04:01:10 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
-<ordsAlias>table_27</ordsAlias>
+<ordsAlias>table_34</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="hic_id" id="B8133A0B-A06A-3D6B-7597-924ED780E084">
+<Column name="laa_id" id="189B5C2A-BD2A-4CD0-F762-C0DC4764BBC2">
 <createdBy>jorge</createdBy>
-<createdTime>2025-09-15 03:25:51 UTC</createdTime>
+<createdTime>2025-09-21 04:02:34 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -18,9 +18,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="hic_farm_id" id="C72E4F02-999D-7AFA-E934-93353C4B1881">
+<Column name="laa_technical_files_id" id="D35CFDE6-CAC3-3A06-CC83-1C0C6AEEE5F1">
 <createdBy>jorge</createdBy>
-<createdTime>2025-09-22 01:22:22 UTC</createdTime>
+<createdTime>2025-09-21 04:08:26 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -28,30 +28,30 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="9FCB74F9-158F-EBE3-10AA-9157EEC82175" referredColumn="BA72D4F7-2C25-23C6-3289-0791F92772CF"/>
+<colAssociation fkAssociation="7086DB19-3823-11F0-B20F-9CD2ADDDDAB2" referredColumn="FE91521A-113F-728D-8E80-A30E10B94144"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="3493B2FC-E14B-ECD4-F996-769D104EDE61" name="TBL_HISTORY_CROPS_PK">
+<ind_PK_UK id="D0944CB1-FB03-0720-EA7D-E9A0C780EAC0" name="TBL_LABORATORY_ANALYSIS_PK">
 <createdBy>jorge</createdBy>
-<createdTime>2025-09-15 03:25:51 UTC</createdTime>
+<createdTime>2025-09-21 04:02:34 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="B8133A0B-A06A-3D6B-7597-924ED780E084"/>
+<colUsage columnID="189B5C2A-BD2A-4CD0-F762-C0DC4764BBC2"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="E97DF1F1-90F3-C319-7C56-E8AA6F0D2737" name="FK_FAR_HIC">
+<ind_PK_UK id="3F764415-A45B-0B0B-E69B-2D285E997383" name="FK_LAA_TEF">
 <createdBy>jorge</createdBy>
-<createdTime>2025-09-22 01:23:24 UTC</createdTime>
+<createdTime>2025-09-21 04:08:51 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="C72E4F02-999D-7AFA-E934-93353C4B1881"/>
+<colUsage columnID="D35CFDE6-CAC3-3A06-CC83-1C0C6AEEE5F1"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

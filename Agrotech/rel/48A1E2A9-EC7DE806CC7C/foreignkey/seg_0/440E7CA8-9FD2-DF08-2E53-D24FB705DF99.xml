@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="440E7CA8-9FD2-DF08-2E53-D24FB705DF99" containerWithKeyObject="EA34964E-CBB7-8149-3EEF-1117A376FAC3" localFKIndex="DDE5758D-F9FA-BEE0-4550-BB1C822201B2" name="FK_CRT_X_CRO">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-21 04:58:17 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<referredTableLongName>TBL_CROPS_TYPE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B4156AE0-1AB7-74FF-4ACC-FD213CC70958</referredTableID>
+<keyObject>76F10219-B5DC-F62C-57AA-B07E6BD06780</keyObject>
+<referredKeyID>76F10219-B5DC-F62C-57AA-B07E6BD06780</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>crt_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

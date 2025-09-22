@@ -31,32 +31,6 @@
 <colAssociation fkAssociation="9C3F6257-394C-8AB2-4A6B-ECA3930690E9" referredColumn="B8133A0B-A06A-3D6B-7597-924ED780E084"/>
 </associations>
 </Column>
-<Column name="tef_treatments_id" id="0A069D7C-6050-45F6-92C8-CA3BA5792C7C">
-<createdBy>jorge</createdBy>
-<createdTime>2025-09-15 03:24:48 UTC</createdTime>
-<ownerDesignName>Agrotech</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="27524E0A-1CAC-819D-7DDD-A61FE662FA28" referredColumn="66B2C28D-14FD-E3CD-4361-5C1D5D6BC105"/>
-</associations>
-</Column>
-<Column name="tef_certications_id" id="292B1154-302F-69E7-CF41-48A98A802DA8">
-<createdBy>jorge</createdBy>
-<createdTime>2025-09-15 03:24:48 UTC</createdTime>
-<ownerDesignName>Agrotech</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="B2902EB3-7371-5695-1351-D1E0FA2D6237" referredColumn="79964F05-6493-16A3-E1A8-DBAACA906620"/>
-</associations>
-</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="E7763523-32D0-8076-52CD-1E2BC9471A5B" name="TBL_TECHNICAL_FILE_PK">
@@ -70,7 +44,7 @@
 <colUsage columnID="FE91521A-113F-728D-8E80-A30E10B94144"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="ACFD9205-BD6E-1AA7-54F4-601328251570" name="FK_TEF_HIC">
+<ind_PK_UK id="ACFD9205-BD6E-1AA7-54F4-601328251570" name="FK_TEF_CER">
 <createdBy>jorge</createdBy>
 <createdTime>2025-09-15 03:31:16 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
@@ -78,26 +52,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="C49A49CC-B67A-432D-2E66-A268B17A716A"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="3D892BE5-7095-FB4B-F2E0-A5B10C2D190B" name="FK_TEF_TRE">
-<createdBy>jorge</createdBy>
-<createdTime>2025-09-15 03:31:16 UTC</createdTime>
-<ownerDesignName>Agrotech</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="0A069D7C-6050-45F6-92C8-CA3BA5792C7C"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="DF29511C-9842-22F0-FEBA-29353A45BEE5" name="FK_TEF_CER">
-<createdBy>jorge</createdBy>
-<createdTime>2025-09-15 03:31:16 UTC</createdTime>
-<ownerDesignName>Agrotech</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="292B1154-302F-69E7-CF41-48A98A802DA8"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

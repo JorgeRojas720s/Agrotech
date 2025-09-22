@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8CACE441-2618-902D-C816-11F5890E954C" name="TBL_COM_X_SPE">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1102B5B5-915F-EFDE-8E6F-2962200C87C9" name="TBL_TEF_X_TRE">
 <createdBy>jorge</createdBy>
-<createdTime>2025-09-14 02:33:29 UTC</createdTime>
+<createdTime>2025-09-21 05:00:42 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
-<ordsAlias>table_10</ordsAlias>
+<ordsAlias>table_37</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="cxs_company_id" id="79026A9E-18F3-386A-08C4-99CDC20F2665">
+<Column name="txt_technical_file_id" id="B29B3380-1DE8-6819-C9B2-5ED5C93A0117">
 <createdBy>jorge</createdBy>
-<createdTime>2025-09-14 02:35:24 UTC</createdTime>
+<createdTime>2025-09-21 05:20:50 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -18,12 +18,12 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="47EF77B2-D857-A010-8217-34E24D12A055" referredColumn="1BF8B5A5-E2DF-6DF8-353A-EC781DDB0D10"/>
+<colAssociation fkAssociation="F39B8FC1-BEC7-B6C0-E666-D4679212C695" referredColumn="FE91521A-113F-728D-8E80-A30E10B94144"/>
 </associations>
 </Column>
-<Column name="cxs_specialities_id" id="FFCE1B05-59DE-E4D0-8068-64E05BF55ACF">
+<Column name="txt_treatments_id" id="4275F886-9ECE-AFA7-629B-C8F3D9FF73EF">
 <createdBy>jorge</createdBy>
-<createdTime>2025-09-14 02:35:24 UTC</createdTime>
+<createdTime>2025-09-21 05:28:14 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -31,41 +31,41 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="75742560-0535-1C46-E2FB-2854E1C1C246" referredColumn="1A5BC2C0-C822-BC8A-CDA1-5358508391E0"/>
+<colAssociation fkAssociation="95189C65-9D8A-1B84-04BF-9C3B414F4371" referredColumn="66B2C28D-14FD-E3CD-4361-5C1D5D6BC105"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="9574648E-6DC1-5CC4-C6FC-66AB497F16E0" name="COMPANY_X_SPECIALTIES_PK">
+<ind_PK_UK id="23F6EDE2-7C1F-8D83-2D51-64C4E1D16991" name="TBL_TEF_X_TRE_PK">
 <createdBy>jorge</createdBy>
-<createdTime>2025-09-14 02:35:24 UTC</createdTime>
+<createdTime>2025-09-21 05:27:36 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="FFCE1B05-59DE-E4D0-8068-64E05BF55ACF"/>
-<colUsage columnID="79026A9E-18F3-386A-08C4-99CDC20F2665"/>
+<colUsage columnID="B29B3380-1DE8-6819-C9B2-5ED5C93A0117"/>
+<colUsage columnID="4275F886-9ECE-AFA7-629B-C8F3D9FF73EF"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="FD534C8F-7F45-E9F5-A965-504469F56DF1" name="FK_COM_X_SPE">
+<ind_PK_UK id="A6D3211D-BB38-C509-CEA8-31C671EE07AC" name="FK_TRE_X_TEF">
 <createdBy>jorge</createdBy>
-<createdTime>2025-09-15 02:12:46 UTC</createdTime>
+<createdTime>2025-09-21 05:32:57 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="79026A9E-18F3-386A-08C4-99CDC20F2665"/>
+<colUsage columnID="4275F886-9ECE-AFA7-629B-C8F3D9FF73EF"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="E5E4C7CE-4123-D5E8-3AEB-19D527416A19" name="FK_SPE_X_COM">
+<ind_PK_UK id="20242B60-EC95-751A-146E-3630AB90F05D" name="FK_TEF_X_TRE">
 <createdBy>jorge</createdBy>
-<createdTime>2025-09-15 02:12:46 UTC</createdTime>
+<createdTime>2025-09-21 05:33:07 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="FFCE1B05-59DE-E4D0-8068-64E05BF55ACF"/>
+<colUsage columnID="B29B3380-1DE8-6819-C9B2-5ED5C93A0117"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

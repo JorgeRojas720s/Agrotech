@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B2902EB3-7371-5695-1351-D1E0FA2D6237" containerWithKeyObject="767C4789-23BE-C86D-19E4-1159E094B623" localFKIndex="DF29511C-9842-22F0-FEBA-29353A45BEE5" name="FK_TEF_CER">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D528856E-2ADE-798E-71D2-880DB84F514C" containerWithKeyObject="0F1A607E-5256-E1DB-A83E-9D49DD03397D" localFKIndex="974CF0B3-4FCD-AEF1-59B4-182042AF54A0" name="FK_TEF_X_CER">
 <createdBy>jorge</createdBy>
-<createdTime>2025-09-15 03:31:16 UTC</createdTime>
+<createdTime>2025-09-21 05:44:22 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
 <referredTableLongName>TBL_CERTFICATIONS</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>

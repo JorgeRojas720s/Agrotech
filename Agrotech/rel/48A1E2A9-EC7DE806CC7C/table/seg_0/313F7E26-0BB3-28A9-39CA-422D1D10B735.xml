@@ -7,4 +7,53 @@
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cro_id" id="9DB791D4-6A7C-82A9-5184-9BAC7356D6D5">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-21 02:41:33 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cro_age" id="FE4BD2F8-6D61-8ED3-7313-780743DF8600">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-22 01:46:19 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cro_area" id="7F8BD616-5CE2-78B5-E005-37910E958714">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-22 01:46:19 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FC943C0A-3B63-7907-0FBD-CCC83A0E3166" name="TBL_CROPS_PK">
+<createdBy>jorge</createdBy>
+<createdTime>2025-09-21 02:53:35 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9DB791D4-6A7C-82A9-5184-9BAC7356D6D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
 </Table>
