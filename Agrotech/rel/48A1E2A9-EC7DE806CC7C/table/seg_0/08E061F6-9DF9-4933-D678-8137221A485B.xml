@@ -26,7 +26,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="com_owner_id" id="EE4987D3-101F-3BBF-95AA-048B791DFA70">
@@ -52,17 +53,6 @@
 <associations>
 <colAssociation fkAssociation="7983402E-18D3-6494-6178-2C9FF3D0971A" referredColumn="6D188FD3-3C24-6345-3A5A-7204C7BF41D4"/>
 </associations>
-</Column>
-<Column name="com_contact" id="10C91AC6-02AC-678B-0D28-067FBB7B204E">
-<createdBy>jorge</createdBy>
-<createdTime>2025-09-14 02:27:04 UTC</createdTime>
-<ownerDesignName>Agrotech</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 <Column name="com_foundation_date" id="8D9EF032-2655-2AB0-439F-A97B8AA2062D">
 <createdBy>jorge</createdBy>

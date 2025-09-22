@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D12BBAFC-4428-BEFF-01DA-ADDC8E3CD851" name="TBL_PER_X_CON">
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 21:57:55 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<ordsAlias>table_44</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="pxc_person_id" id="A3EB5842-8EF9-BF30-19A6-438B995ADDA7">
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 21:59:52 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6F26B7B5-F7DF-4B87-02D5-39435F1DCCB2" referredColumn="50AECBC2-C67E-923E-EE71-0B6139C6A1E8"/>
+</associations>
+</Column>
+<Column name="pxc_contact_id" id="E0F501AF-5773-045E-CA44-34107ED9CCA5">
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 21:59:52 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E45C39B0-84EB-9C53-3240-16C8BA2F9109" referredColumn="D2F8D78C-6D75-EA36-C0A8-C62E8CD13E20"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="88217B5E-09DD-6670-4668-19F74B363C45" name="TBL_PER_X_CON_PK">
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 21:59:52 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A3EB5842-8EF9-BF30-19A6-438B995ADDA7"/>
+<colUsage columnID="E0F501AF-5773-045E-CA44-34107ED9CCA5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1C889655-493C-A074-125C-EE8AF3D38464" name="FK_CON_X_PER">
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 21:59:52 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E0F501AF-5773-045E-CA44-34107ED9CCA5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1D8351AF-C0ED-43AB-BE08-ADB87C6DE15D" name="FK_PER_X_CON">
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 21:59:52 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A3EB5842-8EF9-BF30-19A6-438B995ADDA7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

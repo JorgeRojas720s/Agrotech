@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BA35C6CD-17B7-89D6-3A8D-0FE93C03E47A" name="TBL_CERTFICATIONS">
-<createdBy>jorge</createdBy>
-<createdTime>2025-09-15 03:27:29 UTC</createdTime>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="479570EA-2A54-030E-AB57-C95DA6C7F8F0" name="TBL_SOILS">
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 22:52:24 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
-<ordsAlias>table_29</ordsAlias>
+<ordsAlias>table_46</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="cer_id" id="79964F05-6493-16A3-E1A8-DBAACA906620">
-<createdBy>jorge</createdBy>
-<createdTime>2025-09-15 03:28:35 UTC</createdTime>
+<Column name="soi_id" id="83BBA558-2EF9-19EE-918A-E7D82ECB4350">
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 22:53:11 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -18,9 +18,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="cer_name" id="C7DE7E1B-07EA-56B6-6818-3CD557B2C550">
-<createdBy>jorge</createdBy>
-<createdTime>2025-09-15 03:32:29 UTC</createdTime>
+<Column name="soi_name" id="EE5A1ECE-3F82-9057-48F8-B9AC3ECB4B78">
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 22:53:11 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -32,15 +32,15 @@
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="E6BB08BB-82AC-6C50-0260-1E9B8AED599D" name="TBL_CERTFICATIONS_PK">
-<createdBy>jorge</createdBy>
-<createdTime>2025-09-15 03:29:17 UTC</createdTime>
+<ind_PK_UK id="CFD7E481-C6FE-5A43-AC9D-1ED498C2F670" name="TBL_SOIL_PK">
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 22:53:17 UTC</createdTime>
 <ownerDesignName>Agrotech</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="79964F05-6493-16A3-E1A8-DBAACA906620"/>
+<colUsage columnID="83BBA558-2EF9-19EE-918A-E7D82ECB4350"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

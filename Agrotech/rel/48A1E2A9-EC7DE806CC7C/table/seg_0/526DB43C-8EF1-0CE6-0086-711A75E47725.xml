@@ -44,6 +44,19 @@
 <colAssociation fkAssociation="EFF482B1-9922-CF87-F004-91266F6A92F8" referredColumn="9DB791D4-6A7C-82A9-5184-9BAC7356D6D5"/>
 </associations>
 </Column>
+<Column name="sot_soils_id" id="00D16399-644C-AE34-0DA8-A7B89CD657F6">
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 22:53:49 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="960650C9-C84E-44B5-6BBD-B1C9FEEDE42E" referredColumn="83BBA558-2EF9-19EE-918A-E7D82ECB4350"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="731FC83E-765C-2796-B27B-6F77B5E7009E" name="TBL_SOIL_TYPE_PK">
@@ -75,6 +88,16 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="7F57FC95-50BC-9936-054C-E62C2315FF3F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F175C0CD-5058-3D26-F5AD-C564A539DFD9" name="FK_SOI_SOT">
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 22:54:18 UTC</createdTime>
+<ownerDesignName>Agrotech</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="00D16399-644C-AE34-0DA8-A7B89CD657F6"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
