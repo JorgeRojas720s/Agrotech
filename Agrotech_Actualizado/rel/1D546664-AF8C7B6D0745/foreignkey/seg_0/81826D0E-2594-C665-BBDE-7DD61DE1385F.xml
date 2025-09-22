@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="81826D0E-2594-C665-BBDE-7DD61DE1385F" containerWithKeyObject="A0C679E3-5514-9EA2-DDD7-5B8F8E75CDA6" localFKIndex="A4D8F5A9-595B-89A9-0D3A-55EA0F4B2D14" name="FK_TRE_TRT">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>C449323D-FFA9-E438-8FA0-911BA14E8D06</importedID>
+<referredTableLongName>TBL_TREATMENTS_TYPE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0148105D-512F-602E-71C3-98E9A7CAF3B3</referredTableID>
+<keyObject>3EE759DB-6919-5810-3419-52EC77627CE5</keyObject>
+<referredKeyID>3EE759DB-6919-5810-3419-52EC77627CE5</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>trt_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

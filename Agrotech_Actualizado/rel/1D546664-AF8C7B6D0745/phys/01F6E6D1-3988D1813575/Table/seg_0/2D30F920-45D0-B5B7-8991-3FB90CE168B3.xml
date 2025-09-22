@@ -1,0 +1,43 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="TBL_CRO_X_CRT" directorySegmentName="seg_0" id="2D30F920-45D0-B5B7-8991-3FB90CE168B3">
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="cxc_crops_type_id" id="0780E21E-A95D-875D-E71A-784D3815C241">
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="cxc_crops_id" id="A94BBF79-8323-B2F1-BE9A-F60FA9A84B10">
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_CRO_X_CRT" id="31B37288-AB83-FE4B-8F67-FB6EAE5FB182">
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_CRT_X_CRO" id="AC4F0818-59FA-065F-F0A3-698A0FF127C6">
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="TBL_CROPS_X_CROPS_TYPE_PK" id="E265420C-E22B-C5BE-D5CA-7D94F6306BCD">
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

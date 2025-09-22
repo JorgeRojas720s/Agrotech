@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="03824662-6F21-2798-5C73-14BF4D2C9A26" name="TBL_SALARIES">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>A2367B09-27F1-836B-5186-04E628BD6B5E</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="sal_id" id="B150F63D-1D65-94AF-68B2-737020EFD17E">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>31DBF113-56CA-5E16-AFF3-70375C127842</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>06D30FEF-70DD-9B7B-7270-053D209348C7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sal_amount" id="4F075197-4B06-712A-6EE2-87EEF0C70DD8">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>5FDBBA8F-10D4-E323-CE95-E6FEA087E933</importedID>
+<constraintName>CHK_SAL_AMOUNT</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>7BE764BD-6447-D198-1B2A-86F4D25BB3F5</domain>
+<checkConstraint>
+<implementationDef dbType="Oracle Database 21c" definition="sal_amount &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0AB80C9D-12FE-E018-4816-38B625874E31" name="TBL_SALARIES_PK">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>BC7BC9D1-0DC3-A103-311D-1382A2EE6B0C</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B150F63D-1D65-94AF-68B2-737020EFD17E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

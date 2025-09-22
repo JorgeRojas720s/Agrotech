@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Agrotech_Actualizado" id="FA48A107-8179-AB05-3E03-01EBF4C84034" version="3.5">
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:08:58 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>FA48A107-8179-AB05-3E03-01EBF4C84034</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="D7CB6E7C-7B60-D8AF-A575-6FD18F4FBC79">
+<designStoragePath>C:\script</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

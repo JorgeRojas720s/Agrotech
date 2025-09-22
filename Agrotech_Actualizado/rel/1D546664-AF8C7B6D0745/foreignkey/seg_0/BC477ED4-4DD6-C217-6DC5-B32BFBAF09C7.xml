@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BC477ED4-4DD6-C217-6DC5-B32BFBAF09C7" containerWithKeyObject="D4C552F3-3F60-7993-4D8E-F86738978F78" localFKIndex="7C721484-7257-C2BE-F190-4363D87B45D8" name="FK_DIS_X_FAR">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>7780DE96-172F-260C-C055-18CE7D848944</importedID>
+<referredTableLongName>TBL_DISEASES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F7099249-CAF3-BC9D-AC07-06765DC66569</referredTableID>
+<keyObject>7EE9CD95-40AF-834E-8ACE-5C5480B896E5</keyObject>
+<referredKeyID>7EE9CD95-40AF-834E-8ACE-5C5480B896E5</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>dis_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

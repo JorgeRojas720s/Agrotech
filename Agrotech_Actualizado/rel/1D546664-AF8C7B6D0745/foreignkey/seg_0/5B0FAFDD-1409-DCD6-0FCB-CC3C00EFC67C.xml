@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5B0FAFDD-1409-DCD6-0FCB-CC3C00EFC67C" containerWithKeyObject="6628CFF4-91B0-3220-DE2E-3F6838B1687A" localFKIndex="8E218F44-026C-F47D-178A-CFA4186EF886" name="FK_CAH_VIS">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>F7A6F693-E837-FBC2-C54F-9016E32F78EC</importedID>
+<referredTableLongName>TBL_VISITS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>32E6B2AD-0969-A167-B21F-4E313BE6EE6B</referredTableID>
+<keyObject>1406A8C0-8BC9-BD79-04BF-3CAF4913354A</keyObject>
+<referredKeyID>1406A8C0-8BC9-BD79-04BF-3CAF4913354A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>vis_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="E2A10E01-E29D-27C3-0297-4669034672FA" mainViewID="8AE515F8-9AF5-C282-9FB1-D50648FD8D79">
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:08:58 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

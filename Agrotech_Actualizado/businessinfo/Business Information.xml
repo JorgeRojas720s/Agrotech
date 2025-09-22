@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="1BD2CC8B-A5AE-F08E-10D0-B2AAD635355E">
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:08:58 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

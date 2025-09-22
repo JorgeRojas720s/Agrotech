@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B83ADA56-1C37-5885-294D-238A8C917B03" containerWithKeyObject="32C79826-A640-1DB7-4AEA-EB3B248C1BF2" localFKIndex="05F3364A-1DA5-109A-2874-EF635DEAF1CB" name="FK_SOT_SOI">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>35D73D51-79B5-EBAD-1707-A383F9B07BAF</importedID>
+<referredTableLongName>TBL_SOILS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>904C29A6-27B3-53D2-72F7-57C3EEE8AC3B</referredTableID>
+<keyObject>A8C57E03-B027-4A9E-2690-456C47090AA7</keyObject>
+<referredKeyID>A8C57E03-B027-4A9E-2690-456C47090AA7</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>soi_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

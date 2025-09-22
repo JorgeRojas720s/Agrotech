@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="00632986-F186-3C62-712F-D7FA98430B69" containerWithKeyObject="5175A3C8-DA6C-A875-4FB2-B48A692804B5" localFKIndex="BC9BF1BE-04B4-E972-5C44-7F656ADF28B8" name="FK_FAR_TEF">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>B937B0F3-AF12-E7A3-18B5-75580695A665</importedID>
+<referredTableLongName>TBL_FARMS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>692FD03C-DF11-AD82-DBFC-70790B3E92A3</referredTableID>
+<keyObject>71E9B77F-7546-6CFE-FD23-4042457DF294</keyObject>
+<referredKeyID>71E9B77F-7546-6CFE-FD23-4042457DF294</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>far_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="692FD03C-DF11-AD82-DBFC-70790B3E92A3" name="TBL_FARMS">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>7DC0C07A-7744-3E28-4534-EF3FD5D431B7</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="far_id" id="DF60208A-C7D1-7528-3C8E-AD2394865FA1">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>6A64FD8E-37FD-D077-C2AA-5C121A19C17D</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>06D30FEF-70DD-9B7B-7270-053D209348C7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="far_company_id" id="C8BB7FBA-BB00-C28C-15CA-E47A9CBDDF9F">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>E3E50093-86CC-CBF1-36BE-27BBFB0FB54B</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>06D30FEF-70DD-9B7B-7270-053D209348C7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="30DD2165-DE44-B56F-7A38-F4FE95945A46" referredColumn="82170E86-A31F-DAC8-9254-745B77F42714"/>
+</associations>
+</Column>
+<Column name="far_hectares" id="32EA2D2B-7C60-43A3-4EBC-471A29164794">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>4DBF9A43-D24A-2401-F766-BE7237364022</importedID>
+<constraintName>CHK_FAR_HECTARES</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>4A124EAB-4076-FAF6-62AD-C6D816231229</domain>
+<checkConstraint>
+<implementationDef dbType="Oracle Database 21c" definition="far_hectares &gt; 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="far_address_id" id="C421C240-E99F-2E34-33F0-F86D5C2D854F">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>39F79E29-0C7A-7BB8-50E9-0B3E73D4650F</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>06D30FEF-70DD-9B7B-7270-053D209348C7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E854892C-5DB5-D4FD-878C-8F90BB020211" referredColumn="642E5DF8-D9DF-A5BC-4E7D-027AB43B89D6"/>
+</associations>
+</Column>
+<Column name="far_register_date" id="499D4F95-250C-000F-1928-FD664BD7DCFE">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>DB788205-F145-E169-E415-1114FEF1361A</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>9DD88AC4-2570-B008-1FB8-8BFC15EF671A</domain>
+<defaultValue>SYSTIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="71E9B77F-7546-6CFE-FD23-4042457DF294" name="TBL_FARMS_PK">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>5D7004E4-D942-B233-44CA-A03EC4C57E8E</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DF60208A-C7D1-7528-3C8E-AD2394865FA1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D5752F12-9296-D040-87B9-C4B461AB8D05" name="FK_FAR_ADD">
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C421C240-E99F-2E34-33F0-F86D5C2D854F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1C0FB2DC-7CA8-444B-037A-C0A0A8F1C68B" name="FK_FAR_COM">
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C8BB7FBA-BB00-C28C-15CA-E47A9CBDDF9F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

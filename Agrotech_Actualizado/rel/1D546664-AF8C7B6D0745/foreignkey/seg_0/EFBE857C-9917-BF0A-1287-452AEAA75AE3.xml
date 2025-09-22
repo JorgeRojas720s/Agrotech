@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="EFBE857C-9917-BF0A-1287-452AEAA75AE3" containerWithKeyObject="967A4429-1960-CD69-BE6C-3EBCC198F9AB" localFKIndex="4A6E2902-636F-C630-078A-E61C1FC65139" name="FK_PER_NAT">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>D9B7BC90-E223-38B1-70B9-5A4A331C3E08</importedID>
+<referredTableLongName>TBL_NACIONALITIES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>AA0CE608-CA7C-DDEF-F8C7-977F3F67F88D</referredTableID>
+<keyObject>FB24374E-766D-B0B9-49BF-6ECF99914412</keyObject>
+<referredKeyID>FB24374E-766D-B0B9-49BF-6ECF99914412</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>nan_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3C369FD4-D60B-F3C9-1D95-67342B95254C" name="TBL_WATER_SOURCES">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>ECCDFD37-35DE-5529-EE4B-649051BD9081</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="was_id" id="D9C72A91-0DC8-384D-51D3-E6F372677439">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>23861D58-EF2B-E45A-3D86-0198FD4BB67E</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>06D30FEF-70DD-9B7B-7270-053D209348C7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="was_type" id="23E30495-49F5-ABFB-9E5A-C021EC0E91F2">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>FACD88E0-5F8E-0FCD-73B6-5E82E301CB96</importedID>
+<constraintName>CHK_WAS_TYPE</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>2CFA393B-0FD9-F606-23A2-4D3D2449C54B</domain>
+<listOfValues>
+<valueDef value="ACUEDUCTO" description=""/>
+<valueDef value="LAGO" description=""/>
+<valueDef value="OTRO" description=""/>
+<valueDef value="POZO" description=""/>
+<valueDef value="RÍO" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="was_description" id="04733968-BE5B-3D46-574C-7060A6858D48">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>C950BE51-DFA3-3DCB-E730-8EF3974D44FF</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>2516FF18-A3F1-CA48-8C7C-4CD8411B7D31</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="was_quality" id="29867967-AC8E-6C0C-47A5-48EAD724CC54">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>65D31714-6D02-EFE8-D8AD-4B393CCAECC0</importedID>
+<constraintName>CHK_WAS_QUALITY</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>781C1766-216F-18FA-99C3-3AE0E709910E</domain>
+<listOfValues>
+<valueDef value="BUENA" description=""/>
+<valueDef value="MALA" description=""/>
+<valueDef value="REGULAR" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="was_quantity" id="E6B2272B-258B-A031-1131-CB06C99CDAA5">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>AA6E2E4A-9554-0620-CBF8-A4492E380ECA</importedID>
+<constraintName>CHK_WAS_QUANTITY</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>781C1766-216F-18FA-99C3-3AE0E709910E</domain>
+<listOfValues>
+<valueDef value="ALTA" description=""/>
+<valueDef value="BAJA" description=""/>
+<valueDef value="MEDIA" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EE4C6977-4565-8EB8-32E1-38E456C8B487" name="TBL_WATER_SOURCES_PK">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>88BE796E-8721-C313-E6BC-8B0D90EC53D9</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D9C72A91-0DC8-384D-51D3-E6F372677439"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

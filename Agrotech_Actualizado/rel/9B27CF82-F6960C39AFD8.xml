@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="9B27CF82-7BB7-B18E-A206-F6960C39AFD8" mainViewID="04469F91-4E5F-8115-488B-388D048CD2C3">
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:09:02 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+</relationalModel>

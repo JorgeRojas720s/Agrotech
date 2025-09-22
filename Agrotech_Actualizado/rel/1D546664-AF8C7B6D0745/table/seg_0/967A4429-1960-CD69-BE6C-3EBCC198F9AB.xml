@@ -1,0 +1,186 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="967A4429-1960-CD69-BE6C-3EBCC198F9AB" name="TBL_PERSON">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>DD32409A-D2C9-A0D5-9876-3C6382746839</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="per_id" id="DAC26E4F-8FC3-DCC9-DCF0-D250FF1D8767">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>B3510B05-A6A9-6A3B-92B7-533D8EEF4484</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>06D30FEF-70DD-9B7B-7270-053D209348C7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="per_name" id="2EF84DAE-A2A6-F4C8-06FA-D94F85875B2F">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>93BAB529-15D5-5D8C-9862-F18DE89F0CFC</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D2778396-43D3-03E1-1C6D-C74ADF54400F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="per_lastname" id="515CF6EE-0D23-591A-D027-B544CEBF760D">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>6DD66E9D-8EA5-F85C-EDD9-DAA6D5F686BA</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D2778396-43D3-03E1-1C6D-C74ADF54400F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="per_identification" id="E074C3A3-8F77-C310-D46B-BE0A6F4392FA">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>889C4A7F-25CA-012E-5AD3-E27432E57053</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D2778396-43D3-03E1-1C6D-C74ADF54400F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="per_marital_status" id="5FC384E8-6D10-781A-4193-08069C43DF9A">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>70F514CF-E0AC-F27F-9924-BC34499E3C17</importedID>
+<constraintName>CHK_MARITAL_STATUS</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>D2778396-43D3-03E1-1C6D-C74ADF54400F</domain>
+<listOfValues>
+<valueDef value="CASADO/A" description=""/>
+<valueDef value="DIVORCIADO/A" description=""/>
+<valueDef value="SOLTERO/A" description=""/>
+<valueDef value="UNIÓN LIBRE" description=""/>
+<valueDef value="VIUDO/A" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="per_gender" id="ECFEBF47-987D-1C29-F541-92AD399F9EC0">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>A9CF017A-BF13-FA86-3DCC-CAC5159210EB</importedID>
+<constraintName>CHK_GENDER</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>6DD63484-DA79-88FB-EE36-8868FC7EE56A</domain>
+<listOfValues>
+<valueDef value="F" description=""/>
+<valueDef value="M" description=""/>
+<valueDef value="O" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="per_birthday" id="2EBCD64A-84A4-93AC-3723-E3A8F2A388E5">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>8A30F049-F245-832F-8E33-74816376F209</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>9DD88AC4-2570-B008-1FB8-8BFC15EF671A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="per_education_level" id="39C2DACE-B0A7-B2CA-E2C2-4F580703FF4A">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>F7901019-E670-D1E0-0DED-B24DD7DFB4C0</importedID>
+<constraintName>CHK_EDUCATION_LEVEL</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E774ED7B-92DD-8C5B-CA91-C43096B3A90E</domain>
+<listOfValues>
+<valueDef value="BÁSICA COMPLETA" description=""/>
+<valueDef value="BÁSICA INCOMPLETA" description=""/>
+<valueDef value="DIVERSIFICADA COMPLETA" description=""/>
+<valueDef value="DIVERSIFICADA INCOMPLETA" description=""/>
+<valueDef value="NINGUNO" description=""/>
+<valueDef value="POSTGRADO" description=""/>
+<valueDef value="TÉCNICA COMPLETA" description=""/>
+<valueDef value="TÉCNICA INCOMPLETA" description=""/>
+<valueDef value="UNIVERSITARIA COMPLETA" description=""/>
+<valueDef value="UNIVERSITARIA INCOMPLETA" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="per_nationality_id" id="96C533FB-DE34-64E6-D550-9622BABFCF1A">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>87B48777-2F7E-08AF-1F6F-A0F7E2C37E44</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>06D30FEF-70DD-9B7B-7270-053D209348C7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EFBE857C-9917-BF0A-1287-452AEAA75AE3" referredColumn="69A7C5F1-71FF-869E-C188-00F09B04F351"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7401EFDC-616E-A1D9-0114-5DA11EAC4868" name="TBL_PERSON_PK">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>6FD1557F-1BAC-27CB-ADC9-A119D43CB255</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DAC26E4F-8FC3-DCC9-DCF0-D250FF1D8767"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4A6E2902-636F-C630-078A-E61C1FC65139" name="FK_PER_NAT">
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="96C533FB-DE34-64E6-D550-9622BABFCF1A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

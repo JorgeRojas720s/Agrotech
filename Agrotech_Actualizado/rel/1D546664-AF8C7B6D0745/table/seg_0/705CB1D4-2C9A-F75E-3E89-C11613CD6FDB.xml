@@ -1,0 +1,152 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="705CB1D4-2C9A-F75E-3E89-C11613CD6FDB" name="TBL_SCHEDULE_SPECIALITIES">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>D2A48406-3263-B35E-DE3F-7F3EBB42620C</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="scs_id" id="77C1BF48-501C-CF35-F5B1-0F5A6525C52E">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>2D960CA4-6D9A-E5E4-AF2E-BC4D9F1DFD6A</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>06D30FEF-70DD-9B7B-7270-053D209348C7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="scs_specialite_id" id="C520B94A-574A-250D-949B-5136FBD13B53">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>6F83AE10-C250-88BF-5C49-F0AFF630AF42</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>06D30FEF-70DD-9B7B-7270-053D209348C7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4A7B0387-CC96-B8F6-ABD3-C422F9FE7E4A" referredColumn="65E8BA69-0802-597B-99A6-27543C896943"/>
+</associations>
+</Column>
+<Column name="scs_date" id="0B0B5890-F0AF-225B-AD53-6D5FF33C8011">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>8C42E04D-10D2-8398-537B-B31A8BD3DEC9</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>9DD88AC4-2570-B008-1FB8-8BFC15EF671A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="scs_start_time" id="D77C641D-4063-A95A-E34D-7046C2A717E2">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>E0B4B6AB-8E18-D826-0416-DB6F2684FFF0</importedID>
+<constraintName>CHK_SCS_START_TIME</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>B5127BE2-FBC2-8916-CA4A-F05BCC8C964F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>23</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="scs_end_time" id="D72D6246-41E8-FF27-EDF2-83D2F56ADEBE">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>BE7E137F-E249-1895-E849-EAEF631230A5</importedID>
+<constraintName>CHK_SCS_END_TIME</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>B5127BE2-FBC2-8916-CA4A-F05BCC8C964F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>23</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="scs_visit_time" id="F61783DF-9480-BBEF-D707-27517B91DBF4">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>5F949403-35BD-EF43-7E29-47222F900528</importedID>
+<constraintName>CHK_SCS_VISIT_TIME</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>D02ACACE-95A1-7164-6F56-66709484D9AF</domain>
+<listOfValues>
+<valueDef value="10" description=""/>
+<valueDef value="15" description=""/>
+<valueDef value="20" description=""/>
+<valueDef value="30" description=""/>
+<valueDef value="60" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="903FBBD3-3147-C822-DC72-B683CB88643A" name="TBL_SCHEDULE_SPECIALITE_PK">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>2B9AC969-D983-34EF-8EBF-371B5D9B12D1</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77C1BF48-501C-CF35-F5B1-0F5A6525C52E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C59B5C46-0DD3-88E5-7C06-02E08CD29683" name="FK_SCS_SPE">
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C520B94A-574A-250D-949B-5136FBD13B53"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CHK_SCS_TIME" directorySegmentName="seg_0" id="B2AC1D11-5BDF-0702-9E6C-9402EE3686C8">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>4102AF18-ECD1-D042-0B95-35DFB940077F</importedID>
+<rule><![CDATA[scs_end_time > scs_start_time]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

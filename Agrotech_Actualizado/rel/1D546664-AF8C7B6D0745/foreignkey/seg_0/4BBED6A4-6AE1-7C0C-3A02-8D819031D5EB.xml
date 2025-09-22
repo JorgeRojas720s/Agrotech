@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4BBED6A4-6AE1-7C0C-3A02-8D819031D5EB" containerWithKeyObject="6628CFF4-91B0-3220-DE2E-3F6838B1687A" localFKIndex="59605288-BC31-C057-D932-A7BB95516357" name="FK_CAH_AVA">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>64A59787-B3FA-7A50-F257-37930E9236AC</importedID>
+<referredTableLongName>TBL_AVAILABILITIES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>948131D1-6617-148A-26E5-64DF248A36DC</referredTableID>
+<keyObject>12C13C00-5E2D-938E-5FF7-794423E5AE6E</keyObject>
+<referredKeyID>12C13C00-5E2D-938E-5FF7-794423E5AE6E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ava_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

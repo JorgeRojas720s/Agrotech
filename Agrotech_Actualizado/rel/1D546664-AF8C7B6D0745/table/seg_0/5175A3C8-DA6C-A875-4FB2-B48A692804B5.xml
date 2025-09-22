@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5175A3C8-DA6C-A875-4FB2-B48A692804B5" name="TBL_TEF_X_FAR">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>63722A85-D47E-9725-E897-18FD42C2D63A</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="txf_technical_files_id" id="B97E56D1-AD78-9B35-486B-6E7406A3EE11">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>3CCECDE3-A9F3-1370-8FD5-2FEFB382B06D</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>06D30FEF-70DD-9B7B-7270-053D209348C7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A9A542E1-8972-4850-9973-C0A755B1A836" referredColumn="65CDDE01-6D3C-A9E4-59ED-6D2B10500B60"/>
+</associations>
+</Column>
+<Column name="txf_farms_id" id="1BF47B14-1E6E-DC3C-0B14-8E91980E5BD8">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>62ECAFFF-25F2-C8B1-7D7D-A9C1457365CE</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>06D30FEF-70DD-9B7B-7270-053D209348C7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="00632986-F186-3C62-712F-D7FA98430B69" referredColumn="DF60208A-C7D1-7528-3C8E-AD2394865FA1"/>
+</associations>
+</Column>
+<Column name="txf_distance" id="330EACF9-88DC-94A4-8965-B2362C06015C">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>738D6931-17B0-BE44-F84C-4AAEC4F2E40E</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>7BE764BD-6447-D198-1B2A-86F4D25BB3F5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8894FFAE-DAE3-8AF5-7A91-0CA5C8FCE4FB" name="TBL_TEF_X_FAR_PK">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>F737A18C-5BE7-D162-C7BD-258A507B7ED0</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1BF47B14-1E6E-DC3C-0B14-8E91980E5BD8"/>
+<colUsage columnID="B97E56D1-AD78-9B35-486B-6E7406A3EE11"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BC9BF1BE-04B4-E972-5C44-7F656ADF28B8" name="FK_FAR_TEF">
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1BF47B14-1E6E-DC3C-0B14-8E91980E5BD8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="54EEF447-3100-7613-34A1-A53241A66702" name="FK_TEF_FAR">
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B97E56D1-AD78-9B35-486B-6E7406A3EE11"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

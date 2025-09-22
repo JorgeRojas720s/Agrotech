@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C7FA5A31-048B-4322-98D1-1B4149ABD046" name="TBL_COM_X_SPE">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>05A86926-0499-D662-E156-DEEBE150119A</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cxs_company_id" id="10497DD2-E0CE-FABB-EA26-D72FCA397E27">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>3048A1B2-6832-C9F4-E54C-05D82E8DECE4</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>06D30FEF-70DD-9B7B-7270-053D209348C7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="08981D7B-019C-5B82-A08A-3CB47B9FEB11" referredColumn="82170E86-A31F-DAC8-9254-745B77F42714"/>
+</associations>
+</Column>
+<Column name="cxs_specialities_id" id="BEAD13DD-0400-618D-4FB1-D4619820528D">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>C9236777-A138-FFBB-6588-AF82C4BAA2CD</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>06D30FEF-70DD-9B7B-7270-053D209348C7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F135E77A-60A1-917D-A993-9C3BE46FCCDA" referredColumn="65E8BA69-0802-597B-99A6-27543C896943"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="77446E06-75EF-E5A8-C653-48CCC6A980C3" name="COMPANY_X_SPECIALTIES_PK">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>65A09285-CBF8-126F-846B-F3F3AE9D1ABF</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BEAD13DD-0400-618D-4FB1-D4619820528D"/>
+<colUsage columnID="10497DD2-E0CE-FABB-EA26-D72FCA397E27"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="50E6D1A3-029C-1801-18B1-6B41977ED02E" name="FK_COM_X_SPE">
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="10497DD2-E0CE-FABB-EA26-D72FCA397E27"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4228B49A-1A28-687A-2D8F-B753A441AD18" name="FK_SPE_X_COM">
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BEAD13DD-0400-618D-4FB1-D4619820528D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

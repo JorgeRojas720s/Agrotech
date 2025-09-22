@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="825948E6-F793-79E8-5397-CDBD7943E28E" containerWithKeyObject="4ADD47F5-41EB-62C3-1A2F-1564CFF90E26" localFKIndex="C641DDD1-AC96-3DB4-AC90-FD23E12EA09C" name="FK_PES_X_FAR">
+<sourceDDLFile>script.sql</sourceDDLFile>
+<createdBy>yzmam</createdBy>
+<createdTime>2025-09-22 23:10:32 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<importedID>73DF74A0-3D67-1740-578B-42FE80BA53D6</importedID>
+<referredTableLongName>TBL_PESTS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D6917A49-5773-626E-F78E-974EF5A15ED4</referredTableID>
+<keyObject>A82CEB8E-C303-48B0-B7E6-37B9AF909769</keyObject>
+<referredKeyID>A82CEB8E-C303-48B0-B7E6-37B9AF909769</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>pes_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
