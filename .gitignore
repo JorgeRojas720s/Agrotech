@@ -2,3 +2,7 @@
 **/*.local
 **/*.git
 **/*.DS_Store
+
+
+# Environment files
+.env
