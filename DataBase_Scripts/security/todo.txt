@@ -1,0 +1,13 @@
+Con respecto a los roles, es necesario crearle seguridad por medio de clave, esta clave debe de estar encriptada dentro de la base de datos en alguna tabla de parámetros.
+    Al contar con seguridad por password en roles es necesario implementar procedimientos que asignen la clave a los roles para poder utilizar los permisos de forma correcta
+
+Cada plaga o enfermedad tiene un impacto diferente para SENASA, por ejemplo, plagas cuarentenarias que son altamente destructivas por ejemplo el HLB de los cítricos, se solicita que en el momento que se detecte esta plaga en una finca deben de trasladar la información del productor a una tabla especial, la cual será trasladada periódicamente a SENASA, esta tabla debe de estar totalmente encriptada, ya que su información es sumamente delicada y privada
+
+//Revisar
+
+A la gerencia de la institución agrícola le preocupa la integridad de la información, se solicita crear las bitácoras para las tablas principales:
+    o Inspecciones
+    o Análisis de laboratorio
+    o Expediente técnico
+    o Facturación
+    o Agenda
