@@ -10,7 +10,6 @@ CREATE OR REPLACE PROCEDURE enviar_email_gmail(
     v_username_encoded VARCHAR2(1000);
     v_password_encoded VARCHAR2(1000);
 BEGIN
-    -- Conexión con wallet SSL
     v_conn := UTL_SMTP.OPEN_CONNECTION(
         host => 'smtp.gmail.com',
         port => 587,
@@ -20,22 +19,18 @@ BEGIN
     
     DBMS_OUTPUT.PUT_LINE('Conexión establecida...');
     
-    -- EHLO primero
     UTL_SMTP.EHLO(v_conn, 'oracle-server');
     DBMS_OUTPUT.PUT_LINE('EHLO enviado...');
     
-    -- STARTTLS
     UTL_SMTP.STARTTLS(v_conn);
     DBMS_OUTPUT.PUT_LINE('TLS iniciado...');
     
-    -- EHLO después de TLS
     UTL_SMTP.EHLO(v_conn, 'oracle-server');
     DBMS_OUTPUT.PUT_LINE('EHLO después de TLS...');
     
     -- Autenticación con AUTH LOGIN
     DBMS_OUTPUT.PUT_LINE('Iniciando autenticación LOGIN...');
     
-    -- Codificar username y password en Base64
     v_username_encoded := UTL_RAW.CAST_TO_VARCHAR2(
         UTL_ENCODE.BASE64_ENCODE(UTL_RAW.CAST_TO_RAW(v_usuario))
     );
@@ -55,11 +50,9 @@ BEGIN
     
     DBMS_OUTPUT.PUT_LINE('Autenticación completada...');
     
-    -- Configurar remitente y destinatario
     UTL_SMTP.MAIL(v_conn, v_usuario);
     UTL_SMTP.RCPT(v_conn, p_destinatario);
     
-    -- Enviar mensaje
     UTL_SMTP.OPEN_DATA(v_conn);
     UTL_SMTP.WRITE_DATA(v_conn, 'From: ' || v_usuario || UTL_TCP.CRLF);
     UTL_SMTP.WRITE_DATA(v_conn, 'To: ' || p_destinatario || UTL_TCP.CRLF);
@@ -71,7 +64,6 @@ BEGIN
     
     DBMS_OUTPUT.PUT_LINE('Mensaje enviado...');
     
-    -- Cerrar conexión
     UTL_SMTP.QUIT(v_conn);
     
     DBMS_OUTPUT.PUT_LINE('✅ Email enviado exitosamente a: ' || p_destinatario);
