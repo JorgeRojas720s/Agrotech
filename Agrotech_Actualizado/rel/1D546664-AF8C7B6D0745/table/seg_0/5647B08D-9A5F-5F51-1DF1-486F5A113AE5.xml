@@ -92,6 +92,19 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="agr_consult_price" id="80A26B90-7EAF-646F-6EB6-AF2A9C995011">
+<createdBy>jorge</createdBy>
+<createdTime>2025-10-28 02:17:35 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="57A2B996-D5F2-9CF6-8525-0C61B534D5FE" name="TBL_AGRONOMIST_PK">

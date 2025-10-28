@@ -47,6 +47,19 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="spe_price" id="8240248E-A6E5-202A-7EC8-23FFA2A6287F">
+<createdBy>jorge</createdBy>
+<createdTime>2025-10-28 01:39:06 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="ABA8E184-552F-8718-21FE-00D2595723AE" name="TBL_SPECIALITIES_PK">

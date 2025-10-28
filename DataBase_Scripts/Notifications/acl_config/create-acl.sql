@@ -2,7 +2,7 @@ BEGIN
     DBMS_NETWORK_ACL_ADMIN.CREATE_ACL(
         acl => 'smtp_gmail_acl.xml',
         description => 'ACL para SMTP Gmail',
-        principal => 'SYS',  
+        principal => 'SYS',  --! Usuario o rol que tendrá los privilegios
         is_grant => TRUE,
         privilege => 'connect'
     );
@@ -23,7 +23,7 @@ BEGIN
 END;
 
 
--- Configurar parámetros SMTP
+--! Configurar parámetros SMTP
 ALTER SYSTEM SET smtp_out_server = 'smtp.gmail.com:587' SCOPE=SPFILE;
 
 -- Si value es null usar este comando alternativo:
