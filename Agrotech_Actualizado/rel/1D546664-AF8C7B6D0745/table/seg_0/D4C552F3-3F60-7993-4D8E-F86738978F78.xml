@@ -1,10 +1,11 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D4C552F3-3F60-7993-4D8E-F86738978F78" name="TBLS_FAR_X_DIS">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D4C552F3-3F60-7993-4D8E-F86738978F78" name="TBL_FAR_X_DIS">
 <sourceDDLFile>script.sql</sourceDDLFile>
 <createdBy>yzmam</createdBy>
 <createdTime>2025-09-22 23:10:32 UTC</createdTime>
 <ownerDesignName>Agrotech_Actualizado</ownerDesignName>
 <importedID>D5F910ED-D2EA-29FA-8058-84BB00C9AA35</importedID>
+<ordsAlias>tbls_far_x_dis</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>

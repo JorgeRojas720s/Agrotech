@@ -20,6 +20,7 @@ CREATE TABLE TBL_AGRONOMISTS
      agr_person_id       NUMBER  NOT NULL , 
      agr_hiring_date     TIMESTAMP , 
      agr_salary_id       NUMBER  NOT NULL , 
+     agr_consult_price NUMBER (12,2), 
      agr_professional_id NUMBER 
     ) 
 ;
@@ -469,7 +470,8 @@ CREATE TABLE TBL_SPECIALITIES
     ( 
      spe_id          NUMBER  NOT NULL , 
      spe_type        VARCHAR2 (30) , 
-     spe_description VARCHAR2 (200) 
+     spe_description VARCHAR2 (200),
+     spe_price NUMBER (12,2)
     ) 
 ;
 
@@ -583,15 +585,51 @@ ALTER TABLE TBL_WATER_SOURCES
 ALTER TABLE TBL_WATER_SOURCES
     ADD CONSTRAINT CHK_WAS_QUANTITY CHECK (was_quantity IN ('BAJA', 'MEDIA', 'ALTA'));
 
-CREATE TABLE TBLS_FAR_X_DIS 
+CREATE TABLE TBL_FAR_X_DIS 
     ( 
      fxd_farms_id    NUMBER  NOT NULL , 
      fxd_diseases_id NUMBER  NOT NULL 
     ) 
 ;
 
-ALTER TABLE TBLS_FAR_X_DIS 
+ALTER TABLE TBL_FAR_X_DIS 
     ADD CONSTRAINT TBLS_FARM_X_DISEASES_PK PRIMARY KEY ( fxd_farms_id, fxd_diseases_id ) ;
+
+
+
+CREATE TABLE TBL_ACCOUNT
+    (
+        acc_id NUMBER NOT NULL,
+        acc_amount NUMBER (12,2),
+        acc_state VARCHAR2 (15),
+        acc_date TIMESTAMP DEFAULT SYSTIMESTAMP
+    )
+;
+
+
+ALTER TABLE TBL_ACCOUNT 
+    ADD CONSTRAINT TBL_ACCOUNT_PK PRIMARY KEY ( acc_id ) ;
+
+
+ALTER TABLE TBL_ACCOUNT
+    ADD CONSTRAINT CHK_ACC_STATE CHECK (acc_state IN ('CANCELADO','PAGADO'));
+
+
+CREATE TABLE TBL_COMISSIONS
+    (
+        com_id NUMBER NOT NULL,
+        com_amount NUMBER (12,2),
+        com_agronomist_id NUMBER,
+        com_date TIMESTAMP DEFAULT SYSTIMESTAMP
+    )
+;
+
+ALTER TABLE TBL_COMISSIONS 
+    ADD CONSTRAINT TBL_COMISSIONS_PK PRIMARY KEY ( com_id );
+
+
+
+--!INICIAN LAS FOREIGN KEYS ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ALTER TABLE TBL_AGRONOMISTS 
     ADD CONSTRAINT FK_AGR_COM FOREIGN KEY 
@@ -791,7 +829,7 @@ ALTER TABLE TBL_CRO_X_CRT
     ) 
 ;
 
-ALTER TABLE TBLS_FAR_X_DIS 
+ALTER TABLE TBL_FAR_X_DIS 
     ADD CONSTRAINT FK_DIS_X_FAR FOREIGN KEY 
     ( 
      fxd_diseases_id
@@ -901,7 +939,7 @@ ALTER TABLE TBL_FAR_X_CRO
     ) 
 ;
 
-ALTER TABLE TBLS_FAR_X_DIS 
+ALTER TABLE TBL_FAR_X_DIS 
     ADD CONSTRAINT FK_FAR_X_DIS FOREIGN KEY 
     ( 
      fxd_farms_id
@@ -1164,3 +1202,27 @@ ALTER TABLE TBL_END_X_WAS
      was_id
     ) 
 ;
+
+--!Revisar si falla
+ALTER TABLE TBL_ACCOUNT 
+    ADD CONSTRAINT FK_ACCOUNT FOREIGN KEY 
+    ( 
+     acc_person_id
+    ) 
+    REFERENCES TBL_PERSON 
+    ( 
+     per_id
+    ) 
+;
+
+ALTER TABLE TBL_COMISSIONS
+    ADD CONSTRAINT FK_COMISSION FOREIGN KEY 
+    ( 
+     com_agronomist_id
+    ) 
+    REFERENCES TBL_AGRONOMISTS 
+    ( 
+     agr_id
+    ) 
+;
+

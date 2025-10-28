@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="15286349-5731-631E-8293-2C90301101A9" name="TBL_ACCOUNT">
+<createdBy>jorge</createdBy>
+<createdTime>2025-10-28 01:46:04 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<ordsAlias>table_47</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="acc_id" id="5E398C45-0140-FF7F-39F5-0BE0EDDAC6EA">
+<createdBy>jorge</createdBy>
+<createdTime>2025-10-28 01:48:48 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="acc_amount" id="7914466B-120E-6996-582D-FB3E622EF2D3">
+<createdBy>jorge</createdBy>
+<createdTime>2025-10-28 01:48:48 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="acc_state" id="C386EDB5-7F17-7D7E-B35E-0E151588D295">
+<createdBy>jorge</createdBy>
+<createdTime>2025-10-28 01:48:48 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="acc_person_id" id="CEF26120-B902-87D6-5B91-261C3B1983D2">
+<createdBy>jorge</createdBy>
+<createdTime>2025-10-28 01:49:01 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>06D30FEF-70DD-9B7B-7270-053D209348C7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1355C02F-3A16-39D6-C345-D9F6388712DC" referredColumn="DAC26E4F-8FC3-DCC9-DCF0-D250FF1D8767"/>
+</associations>
+</Column>
+<Column name="acc_date" id="7DA1F499-7FDD-988A-215E-735B6C3CB217">
+<createdBy>jorge</createdBy>
+<createdTime>2025-10-28 01:56:40 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1A4910B5-9794-FD5D-4BB8-7F28923BD919" name="TBL_ACCOUNT_PK">
+<createdBy>jorge</createdBy>
+<createdTime>2025-10-28 01:48:48 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5E398C45-0140-FF7F-39F5-0BE0EDDAC6EA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8EEDA3A4-D4EF-9BFF-79D1-F94E6890A8F0" name="FK_ACC_PER">
+<createdBy>jorge</createdBy>
+<createdTime>2025-10-28 01:49:27 UTC</createdTime>
+<ownerDesignName>Agrotech_Actualizado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CEF26120-B902-87D6-5B91-261C3B1983D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
