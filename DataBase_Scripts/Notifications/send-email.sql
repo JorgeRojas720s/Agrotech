@@ -1,7 +1,8 @@
-CREATE OR REPLACE PROCEDURE enviar_email_gmail(
-    p_destinatario IN VARCHAR2,
-    p_asunto IN VARCHAR2,
-    p_mensaje IN VARCHAR2
+
+CREATE OR REPLACE PROCEDURE send_email(
+    p_recipient IN VARCHAR2,
+    p_subject IN VARCHAR2,
+    p_message IN VARCHAR2
 ) AS
     v_conn UTL_SMTP.connection;
     v_usuario VARCHAR2(50) := 'ismael.marchena.mendez@est.una.ac.cr'; --!Cambiar por su correo
@@ -50,22 +51,22 @@ BEGIN
     DBMS_OUTPUT.PUT_LINE('Autenticación completada...');
     
     UTL_SMTP.MAIL(v_conn, v_usuario);
-    UTL_SMTP.RCPT(v_conn, p_destinatario);
+    UTL_SMTP.RCPT(v_conn, p_recipient);
     
     UTL_SMTP.OPEN_DATA(v_conn);
     UTL_SMTP.WRITE_DATA(v_conn, 'From: ' || v_usuario || UTL_TCP.CRLF);
-    UTL_SMTP.WRITE_DATA(v_conn, 'To: ' || p_destinatario || UTL_TCP.CRLF);
-    UTL_SMTP.WRITE_DATA(v_conn, 'Subject: ' || p_asunto || UTL_TCP.CRLF);
+    UTL_SMTP.WRITE_DATA(v_conn, 'To: ' || p_recipient || UTL_TCP.CRLF);
+    UTL_SMTP.WRITE_DATA(v_conn, 'Subject: ' || p_subject || UTL_TCP.CRLF);
     UTL_SMTP.WRITE_DATA(v_conn, 'Date: ' || TO_CHAR(SYSDATE, 'DD-MON-YYYY HH24:MI:SS') || UTL_TCP.CRLF);
     UTL_SMTP.WRITE_DATA(v_conn, UTL_TCP.CRLF);
-    UTL_SMTP.WRITE_DATA(v_conn, p_mensaje || UTL_TCP.CRLF);
+    UTL_SMTP.WRITE_DATA(v_conn, p_message || UTL_TCP.CRLF);
     UTL_SMTP.CLOSE_DATA(v_conn);
     
     DBMS_OUTPUT.PUT_LINE('Mensaje enviado...');
     
     UTL_SMTP.QUIT(v_conn);
     
-    DBMS_OUTPUT.PUT_LINE('✅ Email enviado exitosamente a: ' || p_destinatario);
+    DBMS_OUTPUT.PUT_LINE('✅ Email enviado exitosamente a: ' || p_recipient);
     
 EXCEPTION
     WHEN OTHERS THEN
@@ -77,16 +78,16 @@ EXCEPTION
                 NULL;
         END;
         RAISE;
-END enviar_email_gmail;
+END send_email;
 
 
 ------------------------------------------------------------------------------
 
 --! Probar el envío
 BEGIN
-    enviar_email_gmail(
-        p_destinatario => 'jorge.rojas.mena@est.una.ac.cr', 
-        p_asunto => 'Hello',
-        p_mensaje => 'Gepeto Mamahuevo' || CHR(10) || CHR(10) || 'Att: El sysdba'
+    send_email(
+        p_recipient => 'jorge.rojas.mena@est.una.ac.cr', 
+        p_subject => 'Hello',
+        p_message => 'Gepeto Mamahuevo' || CHR(10) || CHR(10) || 'Att: El sysdba'
     );
 END;
