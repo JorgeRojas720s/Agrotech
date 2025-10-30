@@ -593,15 +593,15 @@ CREATE TABLE TBL_FAR_X_DIS
 ;
 
 ALTER TABLE TBL_FAR_X_DIS 
-    ADD CONSTRAINT TBLS_FARM_X_DISEASES_PK PRIMARY KEY ( fxd_farms_id, fxd_diseases_id ) ;
-
-
+    ADD CONSTRAINT TBL_FARM_X_DISEASES_PK PRIMARY KEY ( fxd_farms_id, fxd_diseases_id ) 
+;
 
 CREATE TABLE TBL_ACCOUNT
     (
         acc_id NUMBER NOT NULL,
         acc_amount NUMBER (12,2),
         acc_state VARCHAR2 (15),
+        acc_person_id NUMBER,
         acc_date TIMESTAMP DEFAULT SYSTIMESTAMP
     )
 ;

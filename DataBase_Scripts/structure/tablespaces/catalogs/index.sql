@@ -1,0 +1,20 @@
+-- Tablas de relación/catálogos generalmente no necesitan índices adicionales
+-- ya que las PK ya son índices, pero podemos agregar algunos para mejor rendimiento
+
+-- TBL_COM_X_SPE
+CREATE INDEX IDX_CXS_COMPANY ON TBL_COM_X_SPE(cxs_company_id) TABLESPACE TS_CATALOGS;
+
+-- TBL_CON_X_COM
+CREATE INDEX IDX_CXC_CONTACT ON TBL_CON_X_COM(cxc_contact_id) TABLESPACE TS_CATALOGS;
+
+-- TBL_CRO_X_CRT
+CREATE INDEX IDX_CXC_CROPS_TYPE ON TBL_CRO_X_CRT(cxc_crops_type_id) TABLESPACE TS_CATALOGS;
+
+-- TBL_PER_X_CON
+CREATE INDEX IDX_PXC_CONTACT ON TBL_PER_X_CON(pxc_contact_id) TABLESPACE TS_CATALOGS;
+
+-- TBL_TEF_X_CER
+CREATE INDEX IDX_TXC_CERTIFICATION ON TBL_TEF_X_CER(txc_certifications_id) TABLESPACE TS_CATALOGS;
+
+-- TBL_TEF_X_FAR
+CREATE INDEX IDX_TXF_TECH_FILE ON TBL_TEF_X_FAR(txf_technical_files_id) TABLESPACE TS_CATALOGS;

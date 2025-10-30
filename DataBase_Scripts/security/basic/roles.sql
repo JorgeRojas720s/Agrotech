@@ -17,11 +17,11 @@ GRANT CREATE TYPE TO manager;
 CREATE ROLE agronomist;
 GRANT basic TO agronomist;
 
--- Principal permisions for agronomist role
+-- Principal permissions for agronomist role (Agricultural Operations)
 GRANT SELECT, INSERT, UPDATE ON TBL_FIELD_INSPECTIONS TO agronomist;
 GRANT SELECT, INSERT, UPDATE ON TBL_ANOTATIONS TO agronomist;
 GRANT SELECT, INSERT, UPDATE ON TBL_TECHNICAL_FILES TO agronomist;
-GRANT SELECT, INSERT, UPDATE ON TBL_ENVIRONMENTALS_DATA TO agronomIST;
+GRANT SELECT, INSERT, UPDATE ON TBL_ENVIRONMENTALS_DATA TO agronomist;
 GRANT SELECT, INSERT, UPDATE ON TBL_LABORATORY_ANALYSIS TO agronomist;
 
 -- Only read permissions for agronomist role
@@ -34,16 +34,16 @@ GRANT SELECT ON TBL_TREATMENTS_TYPE TO agronomist;
 GRANT SELECT ON TBL_FARMS TO agronomist;
 GRANT SELECT ON TBL_PRODUCERS TO agronomist;
 
--- Agenda management permissions
+-- Agenda management permissions (Scheduling Appointments)
 GRANT SELECT, INSERT, UPDATE ON TBL_SCHEDULE_AGRONOMISTS TO agronomist;
 GRANT SELECT, INSERT, UPDATE ON TBL_AVAILABILITIES TO agronomist;
 GRANT SELECT, INSERT, UPDATE ON TBL_VISITS TO agronomist;
 
---! Rol Técnico
+--! Technical Role
 CREATE ROLE technical;
 GRANT basic TO technical;
 
--- Technical data management permissions
+-- Technical data management permissions (Technical Environmental)
 GRANT SELECT, INSERT, UPDATE ON TBL_TECHNICAL_FILES TO technical;
 GRANT SELECT, INSERT, UPDATE ON TBL_ENVIRONMENTALS_DATA TO technical;
 GRANT SELECT, INSERT, UPDATE ON TBL_CLIMATIC_CONDITIONS TO technical;
@@ -57,7 +57,7 @@ GRANT SELECT ON TBL_CROPS TO technical;
 GRANT SELECT ON TBL_FARMS TO technical;
 GRANT SELECT ON TBL_SOILS TO technical;
 
---! Rol Secretaria
+--! Secretary Role
 CREATE ROLE secretary;
 GRANT basic TO secretary;
 
@@ -68,7 +68,7 @@ GRANT SELECT, INSERT, UPDATE ON TBL_COMPANIES TO secretary;
 GRANT SELECT, INSERT, UPDATE ON TBL_CON_X_COM TO secretary;
 GRANT SELECT, INSERT, UPDATE ON TBL_PER_X_CON TO secretary;
 
--- Agenda management permissions
+-- Agenda management permissions (Scheduling Appointments)
 GRANT SELECT, INSERT, UPDATE ON TBL_SCHEDULE_AGRONOMISTS TO secretary;
 GRANT SELECT, INSERT, UPDATE ON TBL_SCHEDULE_SPECIALITIES TO secretary;
 GRANT SELECT, INSERT, UPDATE ON TBL_AVAILABILITIES TO secretary;
