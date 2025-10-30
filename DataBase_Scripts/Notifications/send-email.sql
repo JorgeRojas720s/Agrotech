@@ -1,20 +1,19 @@
-
 CREATE OR REPLACE PROCEDURE enviar_email_gmail(
     p_destinatario IN VARCHAR2,
     p_asunto IN VARCHAR2,
     p_mensaje IN VARCHAR2
 ) AS
     v_conn UTL_SMTP.connection;
-    v_usuario VARCHAR2(50) := 'MAIL_USUARIO'; --!Cambiar por su correo
-    v_password VARCHAR2(50) := 'MAIL_PASSWORD'; --!Cambiar por su app password
+    v_usuario VARCHAR2(50) := 'ismael.marchena.mendez@est.una.ac.cr'; --!Cambiar por su correo
+    v_password VARCHAR2(50) := 'tter wsvy zdml '; --!Cambiar por su app password
     v_username_encoded VARCHAR2(1000);
     v_password_encoded VARCHAR2(1000);
 BEGIN
     v_conn := UTL_SMTP.OPEN_CONNECTION(
         host => 'smtp.gmail.com',
         port => 587,
-        wallet_path => 'file:/home/oracle/smtp_wallet',
-        wallet_password => 'WALLET_PASSWORD' --!Cambiar por su password del wallet
+        wallet_path => 'file:/home/oracle/smtp_wallet',        
+        wallet_password => 'Agrotech123' --!Cambiar por su password del wallet
     );
     
     DBMS_OUTPUT.PUT_LINE('Conexión establecida...');
@@ -91,5 +90,3 @@ BEGIN
         p_mensaje => 'Gepeto Mamahuevo' || CHR(10) || CHR(10) || 'Att: El sysdba'
     );
 END;
-
-

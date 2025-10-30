@@ -3,6 +3,7 @@
 **/*.git
 **/*.DS_Store
 
+todo.txt
 
 # Environment files
 .env

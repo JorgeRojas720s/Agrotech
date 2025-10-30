@@ -1,13 +1,104 @@
-Con respecto a los roles, es necesario crearle seguridad por medio de clave, esta clave debe de estar encriptada dentro de la base de datos en alguna tabla de parámetros.
-    Al contar con seguridad por password en roles es necesario implementar procedimientos que asignen la clave a los roles para poder utilizar los permisos de forma correcta
+Verificar el tamaño de los tablespace, el cual no debe de exceder en un 85% su tamaño. Este proceso se ejecutará todos los días, notificar en caso de que exista inconsistencia al correo definido para el DBA
 
-Cada plaga o enfermedad tiene un impacto diferente para SENASA, por ejemplo, plagas cuarentenarias que son altamente destructivas por ejemplo el HLB de los cítricos, se solicita que en el momento que se detecte esta plaga en una finca deben de trasladar la información del productor a una tabla especial, la cual será trasladada periódicamente a SENASA, esta tabla debe de estar totalmente encriptada, ya que su información es sumamente delicada y privada
+Con respecto a los roles, es necesario crearle seguridad por medio de clave, esta clave debe de estar encriptada dentro de la base de datos en alguna tabla de parámetros. //AGREGARLE UN LOGBOOK
+    Al contar con seguridad por password en roles es necesario implementar procedimientos que asignen la clave a los roles para poder utilizar los permisos de forma correcta
 
 //Revisar
 
 A la gerencia de la institución agrícola le preocupa la integridad de la información, se solicita crear las bitácoras para las tablas principales:
-    o Inspecciones
-    o Análisis de laboratorio
-    o Expediente técnico
-    o Facturación
-    o Agenda
+    o Inspecciones //YA
+    o Análisis de laboratorio //YA
+    o Expediente técnico //YA
+    o Facturación //HACER
+    o Agenda //HACER
+
+    
+BEGIN
+    send_email(
+        p_recipient => 'jorge.rojas.mena@est.una.ac.cr', 
+        p_subject => 'Hello',
+        p_message => 'Gepeto Mamahuevo' || CHR(10) || CHR(10) || 'Att: El sysdba'
+    );
+END;
+
+
+CREATE OR REPLACE PROCEDURE send_email(
+    p_recipient IN VARCHAR2,
+    p_subject IN VARCHAR2,
+    p_message IN VARCHAR2
+) AS
+    v_conn UTL_SMTP.connection;
+    v_usuario VARCHAR2(50) := 'ismael.marchena.mendez@est.una.ac.cr'; --!Cambiar por su correo
+    v_password VARCHAR2(50) := 'aupu enqv bttd albx'; --!Cambiar por su app password
+    v_username_encoded VARCHAR2(1000);
+    v_password_encoded VARCHAR2(1000);
+BEGIN
+    v_conn := UTL_SMTP.OPEN_CONNECTION(
+        host => 'smtp.gmail.com',
+        port => 587,
+        wallet_path => 'file:/home/oracle/smtp_wallet',
+        wallet_password => 'Agrotech123' --!Cambiar por su password del wallet
+    );
+    
+    DBMS_OUTPUT.PUT_LINE('Conexión establecida...');
+    
+    UTL_SMTP.EHLO(v_conn, 'oracle-server');
+    DBMS_OUTPUT.PUT_LINE('EHLO enviado...');
+    
+    UTL_SMTP.STARTTLS(v_conn);
+    DBMS_OUTPUT.PUT_LINE('TLS iniciado...');
+    
+    UTL_SMTP.EHLO(v_conn, 'oracle-server');
+    DBMS_OUTPUT.PUT_LINE('EHLO después de TLS...');
+    
+    -- Autenticación con AUTH LOGIN
+    DBMS_OUTPUT.PUT_LINE('Iniciando autenticación LOGIN...');
+    
+    v_username_encoded := UTL_RAW.CAST_TO_VARCHAR2(
+        UTL_ENCODE.BASE64_ENCODE(UTL_RAW.CAST_TO_RAW(v_usuario))
+    );
+    
+    v_password_encoded := UTL_RAW.CAST_TO_VARCHAR2(
+        UTL_ENCODE.BASE64_ENCODE(UTL_RAW.CAST_TO_RAW(v_password))
+    );
+    
+    DBMS_OUTPUT.PUT_LINE('Enviando AUTH LOGIN...');
+    UTL_SMTP.COMMAND(v_conn, 'AUTH LOGIN');
+    
+    DBMS_OUTPUT.PUT_LINE('Enviando username...');
+    UTL_SMTP.COMMAND(v_conn, v_username_encoded);
+    
+    DBMS_OUTPUT.PUT_LINE('Enviando password...');
+    UTL_SMTP.COMMAND(v_conn, v_password_encoded);
+    
+    DBMS_OUTPUT.PUT_LINE('Autenticación completada...');
+    
+    UTL_SMTP.MAIL(v_conn, v_usuario);
+    UTL_SMTP.RCPT(v_conn, p_recipient);
+    
+    UTL_SMTP.OPEN_DATA(v_conn);
+    UTL_SMTP.WRITE_DATA(v_conn, 'From: ' || v_usuario || UTL_TCP.CRLF);
+    UTL_SMTP.WRITE_DATA(v_conn, 'To: ' || p_recipient || UTL_TCP.CRLF);
+    UTL_SMTP.WRITE_DATA(v_conn, 'Subject: ' || p_subject || UTL_TCP.CRLF);
+    UTL_SMTP.WRITE_DATA(v_conn, 'Date: ' || TO_CHAR(SYSDATE, 'DD-MON-YYYY HH24:MI:SS') || UTL_TCP.CRLF);
+    UTL_SMTP.WRITE_DATA(v_conn, UTL_TCP.CRLF);
+    UTL_SMTP.WRITE_DATA(v_conn, p_message || UTL_TCP.CRLF);
+    UTL_SMTP.CLOSE_DATA(v_conn);
+    
+    DBMS_OUTPUT.PUT_LINE('Mensaje enviado...');
+    
+    UTL_SMTP.QUIT(v_conn);
+    
+    DBMS_OUTPUT.PUT_LINE('✅ Email enviado exitosamente a: ' || p_recipient);
+    
+EXCEPTION
+    WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('❌ Error al enviar email: ' || SQLERRM);
+        BEGIN
+            UTL_SMTP.QUIT(v_conn);
+        EXCEPTION
+            WHEN OTHERS THEN
+                NULL;
+        END;
+        RAISE;
+END send_email;
