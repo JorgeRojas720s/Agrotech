@@ -4,6 +4,7 @@ SET TIMING ON
 SET SERVEROUTPUT ON SIZE UNLIMITED
 DEFINE BASE_PATH = "C:\Users\yzmam\Documents\database\Agrotech\DataBase_Scripts"
 
+--! Ejecutar primero los logbooks antes del tablespace de logs_data
 PROMPT ========================================
 PROMPT   EJECUCIÓN COMPLETA - AGROTECH DATABASE
 PROMPT ========================================
@@ -192,6 +193,7 @@ BEGIN
     -- Verificar tablas
     FOR t IN (SELECT table_name, num_rows 
               FROM user_tables 
+              where table_name LIKE 'TBL_%'
               ORDER BY table_name) 
     LOOP
         DBMS_OUTPUT.PUT_LINE('✅ Tabla: ' || t.table_name);

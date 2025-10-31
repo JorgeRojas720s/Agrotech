@@ -1,0 +1,14 @@
+CREATE TABLE TBL_ROLE_SECURITY (
+    role_name VARCHAR2(30) PRIMARY KEY,
+    encrypted_password RAW(256) NOT NULL,
+    salt RAW(32) NOT NULL,
+    created_date TIMESTAMP DEFAULT SYSTIMESTAMP,
+    last_modified TIMESTAMP DEFAULT SYSTIMESTAMP,
+    is_active CHAR(1) DEFAULT 'S',
+    failed_attempts NUMBER DEFAULT 0,
+    last_login TIMESTAMP,
+    created_by VARCHAR2(30) DEFAULT USER
+) TABLESPACE TS_MASTER_DATA;
+
+ALTER TABLE TBL_ROLE_SECURITY
+    ADD CONSTRAINT CHK_RS_ACTIVE CHECK (is_active IN ('S', 'N'));
