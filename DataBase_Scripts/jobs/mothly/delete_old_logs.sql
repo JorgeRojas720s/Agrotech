@@ -1,4 +1,4 @@
--- Programar job de limpieza automática (ejecutar mensualmente)
+
 BEGIN
     DBMS_SCHEDULER.CREATE_JOB (
         job_name        => 'PURGE_OLD_LOGS_JOB',
