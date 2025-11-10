@@ -6,7 +6,7 @@ CREATE OR REPLACE PROCEDURE send_email(
 ) AS
     v_conn UTL_SMTP.connection;
     v_usuario VARCHAR2(50) := 'ismael.marchena.mendez@est.una.ac.cr'; --!Cambiar por su correo
-    v_password VARCHAR2(50) := 'tter wsvy zdml '; --!Cambiar por su app password
+    v_password VARCHAR2(50) := 'tter wsvy zdml'; --!Cambiar por su app password
     v_username_encoded VARCHAR2(1000);
     v_password_encoded VARCHAR2(1000);
 BEGIN
