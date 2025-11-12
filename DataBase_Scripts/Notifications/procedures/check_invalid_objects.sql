@@ -1,4 +1,4 @@
-CREATE OR REPLACE PROCEDURE check_invalid_objects AS
+CREATE OR REPLACE PROCEDURE pcr_check_invalid_objects AS
     v_invalid_count NUMBER;
     v_email_recipient VARCHAR2(100);
     v_subject VARCHAR2(200);
@@ -94,7 +94,7 @@ BEGIN
             'Por favor, no responder este correo.';
         
         -- Enviar notificación al DBA
-        send_email(
+        pcr_send_email(
             p_recipient => v_email_recipient,
             p_subject => v_subject,
             p_message => v_message
@@ -132,7 +132,7 @@ BEGIN
                 '   • Objetos inválidos: 0' || CHR(10) || CHR(10) ||
                 'Estado del sistema: NORMAL';
                 
-            send_email(
+            pcr_send_email(
                 p_recipient => v_email_recipient,
                 p_subject => v_subject,
                 p_message => v_message
@@ -161,7 +161,7 @@ EXCEPTION
                 'Error: ' || SQLERRM || CHR(10) ||
                 'Fecha: ' || TO_CHAR(SYSDATE, 'DD/MM/YYYY HH24:MI:SS');
                 
-            send_email(
+            pcr_send_email(
                 p_recipient => v_email_recipient,
                 p_subject => v_subject,
                 p_message => v_message
@@ -172,4 +172,4 @@ EXCEPTION
         END;
         
         RAISE;
-END check_invalid_objects;
+END pcr_check_invalid_objects;

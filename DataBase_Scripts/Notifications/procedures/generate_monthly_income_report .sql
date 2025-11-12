@@ -1,4 +1,4 @@
-CREATE OR REPLACE PROCEDURE generate_monthly_income_report AS
+CREATE OR REPLACE PROCEDURE pcr_generate_monthly_income_report AS
     v_email_recipient VARCHAR2(100);
     v_subject VARCHAR2(200);
     v_message CLOB;
@@ -163,7 +163,7 @@ BEGIN
         '-- Reporte automatico generado por el sistema --';
     
     -- Enviar reporte al gerente
-    send_email(
+    pcr_send_email(
         p_recipient => v_email_recipient,
         p_subject => v_subject,
         p_message => v_message
@@ -185,7 +185,7 @@ EXCEPTION
                 'Fecha: ' || v_generation_date || CHR(10) ||
                 'Por favor, contacte al administrador del sistema.';
                 
-            send_email(
+            pcr_send_email(
                 p_recipient => v_email_recipient,
                 p_subject => v_subject,
                 p_message => v_message
@@ -193,5 +193,5 @@ EXCEPTION
         EXCEPTION
             WHEN OTHERS THEN NULL;
         END;
-END generate_monthly_income_report;
+END pcr_generate_monthly_income_report;
 /
