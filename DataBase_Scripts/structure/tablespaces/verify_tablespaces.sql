@@ -62,7 +62,7 @@ BEGIN
     
     -- Enviar correo si hay alertas
     IF v_count_alerts > 0 THEN
-        send_email(
+        pcr_send_email(
             p_recipient => 'jorge.rojas.mena@est.una.ac.cr', 
             p_subject => 'tablespace usage alert',
             p_message => v_alert_message
@@ -75,7 +75,7 @@ EXCEPTION
         VALUES (ts_monitoring_seq.NEXTVAL, 'ERROR', 0, 'Y');
         COMMIT;
         -- También enviar correo de error
-        send_email(
+        pcr_send_email(
             p_recipient => 'jorge.rojas.mena@est.una.ac.cr', 
             p_subject => 'tablespace usage error',
             p_message => sqlerrm

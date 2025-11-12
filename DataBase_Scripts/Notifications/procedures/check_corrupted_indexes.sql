@@ -1,4 +1,4 @@
-CREATE OR REPLACE PROCEDURE check_corrupted_indexes AS
+CREATE OR REPLACE PROCEDURE pcr_check_corrupted_indexes AS
     v_corrupted_count NUMBER;
     v_email_recipient VARCHAR2(100);
     v_subject VARCHAR2(200);
@@ -89,7 +89,7 @@ BEGIN
             '-- Mensaje automático --';
         
         -- Enviar notificación
-        send_email(
+        pcr_send_email(
             p_recipient => v_email_recipient,
             p_subject => v_subject,
             p_message => v_message
@@ -110,7 +110,7 @@ BEGIN
                 'Fecha: ' || v_current_date || CHR(10) ||
                 '-- Mensaje automático --';
                 
-            send_email(
+            pcr_send_email(
                 p_recipient => v_email_recipient,
                 p_subject => v_subject,
                 p_message => v_message
@@ -138,5 +138,5 @@ EXCEPTION
         EXCEPTION
             WHEN OTHERS THEN NULL;
         END;
-END check_corrupted_indexes;
+END pcr_check_corrupted_indexes;
 /

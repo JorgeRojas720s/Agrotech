@@ -1,5 +1,5 @@
 -- Crear procedimiento para limpiar logs antiguos (opcional)
-CREATE OR REPLACE PROCEDURE PURGE_OLD_LOGS (
+CREATE OR REPLACE PROCEDURE PCR_PURGE_OLD_LOGS (
     p_retention_days IN NUMBER DEFAULT 365
 ) AS
 BEGIN

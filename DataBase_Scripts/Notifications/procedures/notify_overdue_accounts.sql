@@ -1,4 +1,4 @@
-CREATE OR REPLACE PROCEDURE notify_overdue_accounts AS
+CREATE OR REPLACE PROCEDURE pcr_notify_overdue_accounts AS
     CURSOR c_overdue_accounts IS
         SELECT 
             a.acc_id,
@@ -52,7 +52,7 @@ BEGIN
                 'Este es un mensaje automático, por favor no responda.';
             
             -- Enviar email
-            send_email(
+            pcr_send_email(
                 p_recipient => rec.email,
                 p_subject => v_subject,
                 p_message => v_message
@@ -103,5 +103,5 @@ EXCEPTION
         ROLLBACK;
         DBMS_OUTPUT.PUT_LINE('Error crítico en el proceso: ' || SQLERRM);
         RAISE;
-END notify_overdue_accounts;
+END pcr_notify_overdue_accounts;
 /

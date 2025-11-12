@@ -1,4 +1,4 @@
-CREATE OR REPLACE PROCEDURE notificar_visitas_programadas AS
+CREATE OR REPLACE PROCEDURE pcr_notify_scheduled_visits AS
     CURSOR c_visitas IS
         SELECT 
             v.vis_id,
@@ -53,7 +53,7 @@ BEGIN
                 visita.empresa_agronomo;
             
             -- Enviar correo
-            send_email(
+            pcr_send_email(
                 p_recipient => visita.email_productor,
                 p_subject => v_subject,
                 p_message => v_message
@@ -77,5 +77,5 @@ EXCEPTION
     WHEN OTHERS THEN
         DBMS_OUTPUT.PUT_LINE('❌ Error en el proceso de notificación: ' || SQLERRM);
         RAISE;
-END notificar_visitas_programadas;
+END pcr_notify_scheduled_visits;
 /

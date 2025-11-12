@@ -1,5 +1,5 @@
 
-CREATE OR REPLACE PROCEDURE send_email(
+CREATE OR REPLACE PROCEDURE pcr_send_email(
     p_recipient IN VARCHAR2,
     p_subject IN VARCHAR2,
     p_message IN VARCHAR2
@@ -78,14 +78,14 @@ EXCEPTION
                 NULL;
         END;
         RAISE;
-END send_email;
+END pcr_send_email;
 
 
 ------------------------------------------------------------------------------
 
 --! Probar el envío
 BEGIN
-    send_email(
+    pcr_send_email(
         p_recipient => 'jorge.rojas.mena@est.una.ac.cr', 
         p_subject => 'Hello',
         p_message => 'Gepeto Mamahuevo' || CHR(10) || CHR(10) || 'Att: El sysdba'

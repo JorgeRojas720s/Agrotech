@@ -3,7 +3,7 @@ BEGIN
     DBMS_SCHEDULER.CREATE_JOB (
         job_name        => 'JOB_NOTIFICACION_VISITAS',
         job_type        => 'PLSQL_BLOCK',
-        job_action      => 'BEGIN notificar_visitas_programadas; END;',
+        job_action      => 'BEGIN pcr_notify_scheduled_visits; END;',
         start_date      => SYSTIMESTAMP,
         repeat_interval => 'FREQ=DAILY; BYHOUR=8; BYMINUTE=0',
         enabled         => TRUE,
