@@ -1,4 +1,4 @@
-
+-- Job programado para ejecutar semestralmente (1ro de Enero y Julio)
 BEGIN
     DBMS_SCHEDULER.CREATE_JOB (
         job_name        => 'SEMESTRAL_PESTS_DISEASES_REPORT',
