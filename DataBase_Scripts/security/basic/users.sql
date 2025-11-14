@@ -12,7 +12,7 @@ grant sys to yzma;
 grant basic to yzma;
 
 --! Agronomist user example
-CREATE USER agronomist_maria IDENTIFIED BY "AgroSecure2024!"
+CREATE USER agronomist_maria IDENTIFIED BY "@groSecure2024!"
 PROFILE agronomist_profile
 DEFAULT TABLESPACE TS_AGRICULTURAL_OPERATIONS
 TEMPORARY TABLESPACE temp
@@ -23,7 +23,7 @@ QUOTA 100M ON TS_TECHNICAL_ENVIRONMENTAL;
 GRANT agronomist TO agronomist_maria;
 
 --! Technical user example
-CREATE USER tech_carlos IDENTIFIED BY "TechAnalyst2024!"
+CREATE USER tech_carlos IDENTIFIED BY "TechAn@lyst2024!"
 PROFILE technical_profile
 DEFAULT TABLESPACE TS_TECHNICAL_ENVIRONMENTAL
 TEMPORARY TABLESPACE temp
@@ -34,7 +34,7 @@ QUOTA 100M ON TS_PESTS_TREATMENTS;
 GRANT technical TO tech_carlos;
 
 --! Secretary user example
-CREATE USER secretary_ana IDENTIFIED BY "AdminSecure2024!"
+CREATE USER secretary_ana IDENTIFIED BY "@dminSecure2024!"
 PROFILE secretary_profile
 DEFAULT TABLESPACE TS_SCHEDULING_APPOINTMENTS
 TEMPORARY TABLESPACE temp
@@ -45,7 +45,7 @@ QUOTA 50M ON TS_CATALOGS;
 GRANT secretary TO secretary_ana;
 
 --! Manager user example
-CREATE USER db_manager IDENTIFIED BY "ManagerSecure2024!"
+CREATE USER db_manager IDENTIFIED BY "Man@gerSecure2024!"
 PROFILE manager_profile
 DEFAULT TABLESPACE TS_FINANCE
 TEMPORARY TABLESPACE temp

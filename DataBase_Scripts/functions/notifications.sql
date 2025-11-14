@@ -63,7 +63,7 @@ BEGIN
             DBMS_OUTPUT.PUT_LINE('✅ Notificación enviada a: ' || visita.email_productor);
             
             -- Pequeña pausa para no saturar el servidor SMTP
-            DBMS_LOCK.SLEEP(2);
+            SYS.DBMS_LOCK.SLEEP(2);
             
         EXCEPTION
             WHEN OTHERS THEN

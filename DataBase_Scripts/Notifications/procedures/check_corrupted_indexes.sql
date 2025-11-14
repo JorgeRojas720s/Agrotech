@@ -130,7 +130,7 @@ EXCEPTION
                 'Fecha: ' || TO_CHAR(SYSDATE, 'DD/MM/YY HH24:MI') || CHR(10) ||
                 '-- Mensaje automático --';
                 
-            send_email(
+            pcr_send_email(
                 p_recipient => v_email_recipient,
                 p_subject => v_subject,
                 p_message => v_message

@@ -1,0 +1,5 @@
+1. Ejecutar sys_master_script.sql
+2. Cambiar al usuario db_manager
+3. Ejecutar sys_master_script
+4. Cambiar al usuario sys
+5. Ejecutar sys_final_master_script

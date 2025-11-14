@@ -1,30 +1,24 @@
 PROMPT 
 PROMPT ==================== FASE 8: NOTIFICACIONES ====================
 
-PROMPT 8.1 Configurando ACL...
-@&BASE_PATH/Notifications/acl_config/create-acl.sql
-
-PROMPT 8.2 Verificando configuración...
-@&BASE_PATH/Notifications/acl_config/verify.sql
-
 PROMPT 8.3 Función de envío de emails...
-@&BASE_PATH/Notifications/send-email.sql
+@&BASE_PATH/notifications/send_email.sql
 
 PROMPT 8.4 Procedimientos de Notificación...
 PROMPT 8.4.1 Verificación de Índices Corruptos...
-@&BASE_PATH/Notifications/procedures/check_corrupted_indexes.sql
+@&BASE_PATH/notifications/procedures/check_corrupted_indexes.sql
 
 PROMPT 8.4.2 Verificación de Objetos Inválidos...
-@&BASE_PATH/Notifications/procedures/check_invalid_objects.sql
+@&BASE_PATH/notifications/procedures/check_invalid_objects.sql
 
 PROMPT 8.4.3 Notificación de Cuentas Vencidas...
-@&BASE_PATH/Notifications/procedures/notify_overdue_accounts.sql
+@&BASE_PATH/notifications/procedures/notify_overdue_accounts.sql
 
 PROMPT 8.4.4 Generación Reporte de Ingresos Mensuales...
-@&BASE_PATH/Notifications/procedures/generate_monthly_income_report.sql
+@&BASE_PATH/notifications/procedures/generate_monthly_income_report.sql
 
 PROMPT 8.4.5 Generación Reporte Semestral de Plagas y Enfermedades...
-@&BASE_PATH/Notifications/procedures/generate_semester_pests_diseases_report.sql
+@&BASE_PATH/notifications/procedures/generate_semester_pests_diseases_report.sql
 
 PROMPT 8.4.6 Generación Reporte Semestral de Productores...
-@&BASE_PATH/Notifications/procedures/generate_semester_producer_report.sql
+@&BASE_PATH/notifications/procedures/generate_semester_producer_report.sql

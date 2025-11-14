@@ -79,15 +79,15 @@ EXCEPTION
         END;
         RAISE;
 END pcr_send_email;
-
+/
 
 ------------------------------------------------------------------------------
 
---! Probar el envío
-BEGIN
-    pcr_send_email(
-        p_recipient => 'jorge.rojas.mena@est.una.ac.cr', 
-        p_subject => 'Hello',
-        p_message => 'Gepeto Mamahuevo' || CHR(10) || CHR(10) || 'Att: El sysdba'
-    );
-END;
+-- --! Probar el envío
+-- BEGIN
+--     pcr_send_email(
+--         p_recipient => 'jorge.rojas.mena@est.una.ac.cr', 
+--         p_subject => 'Hello',
+--         p_message => 'Gepeto Mamahuevo' || CHR(10) || CHR(10) || 'Att: El sysdba'
+--     );
+-- END;

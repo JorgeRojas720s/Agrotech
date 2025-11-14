@@ -1,4 +1,4 @@
-CREATE OR REPLACE PROCEDURE check_tablespace_usage AS
+CREATE OR REPLACE PROCEDURE pcr_check_tablespace_usage AS
     v_percentage NUMBER;
     v_total_mb NUMBER;
     v_free_mb NUMBER;
@@ -80,5 +80,5 @@ EXCEPTION
             p_subject => 'tablespace usage error',
             p_message => sqlerrm
         );
-END check_tablespace_usage;
+END pcr_check_tablespace_usage;
 /

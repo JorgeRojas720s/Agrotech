@@ -8,3 +8,14 @@
   -sysPassword Oracle123 \
   -systemPassword Oracle123 \
   -createAsContainerDatabase false
+
+   dbca -silent -createDatabase \
+  -templateName General_Purpose.dbc \
+  -gdbname Agrotechh -sid Agrotechh \
+  -responseFile NO_VALUE \
+  -characterSet AL32UTF8 \
+  -memoryPercentage 30 \
+  -emConfiguration NONE \
+  -sysPassword Oracle123 \
+  -systemPassword Oracle123 \
+  -createAsContainerDatabase false

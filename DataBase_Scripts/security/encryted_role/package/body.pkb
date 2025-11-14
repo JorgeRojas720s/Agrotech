@@ -6,15 +6,15 @@ CREATE OR REPLACE PACKAGE BODY pkg_role_security AS
     BEGIN
         -- Generar salt si no se proporciona
         IF p_salt IS NULL THEN
-            v_salt := DBMS_CRYPTO.RANDOMBYTES(32);
+            v_salt := SYS.DBMS_CRYPTO.RANDOMBYTES(32);
         ELSE
             v_salt := p_salt;
         END IF;
         
         -- Encriptar password usando SHA-256 con salt
-        v_encrypted := DBMS_CRYPTO.HASH(
+        v_encrypted := SYS.DBMS_CRYPTO.HASH(
             utl_i18n.string_to_raw(p_password || RAWTOHEX(v_salt), 'AL32UTF8'),
-            DBMS_CRYPTO.HASH_SH256
+            SYS.DBMS_CRYPTO.HASH_SH256
         );
         
         RETURN v_encrypted;
@@ -90,7 +90,7 @@ CREATE OR REPLACE PACKAGE BODY pkg_role_security AS
         END IF;
         
         -- Generar salt
-        v_salt := DBMS_CRYPTO.RANDOMBYTES(32);
+        v_salt := SYS.DBMS_CRYPTO.RANDOMBYTES(32);
         
         -- Encriptar password
         v_encrypted := encrypt_password(p_password, v_salt);

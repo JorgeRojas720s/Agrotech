@@ -1,8 +1,3 @@
--- Inserto una inspeccion
-INSERT INTO TBL_FIELD_INSPECTIONS
-(fii_id, fii_soil_ph, fii_humidity, fii_ambient_temperature, fii_nutrient_level, fii_crops_id, fii_agronomists_id)
-VALUES (SEQ_FIELD_INSPECTIONS.NEXTVAL, 6.8, 78, 26.5, 'MEDIO', 10, 2);
-
 -- =========================================
 -- Cada plaga o enfermedad tiene un impacto diferente para SENASA, por
 -- ejemplo, plagas cuarentenarias que son altamente destructivas por ejemplo el
@@ -67,7 +62,7 @@ CREATE OR REPLACE PACKAGE BODY PK_CRYPTO AS
   FUNCTION random_iv RETURN RAW IS
     v_iv RAW(16);
   BEGIN
-    v_iv := DBMS_CRYPTO.RANDOMBYTES(16);
+    v_iv := SYS.DBMS_CRYPTO.RANDOMBYTES(16);
     RETURN v_iv;
   END;
 
@@ -75,9 +70,9 @@ CREATE OR REPLACE PACKAGE BODY PK_CRYPTO AS
     v_key RAW(32) := get_key();
   BEGIN
     IF p_plain IS NULL THEN RETURN NULL; END IF;
-    RETURN DBMS_CRYPTO.ENCRYPT(
+    RETURN SYS.DBMS_CRYPTO.ENCRYPT(
              src => UTL_I18N.STRING_TO_RAW(p_plain, 'AL32UTF8'),
-             typ => DBMS_CRYPTO.AES_CBC_PKCS5,
+             typ => SYS.DBMS_CRYPTO.AES_CBC_PKCS5,
              key => v_key,
              iv  => p_iv
            );
@@ -88,9 +83,9 @@ CREATE OR REPLACE PACKAGE BODY PK_CRYPTO AS
     v_raw RAW(32767);
   BEGIN
     IF p_cipher IS NULL THEN RETURN NULL; END IF;
-    v_raw := DBMS_CRYPTO.DECRYPT(
+    v_raw := SYS.DBMS_CRYPTO.DECRYPT(
                src => p_cipher,
-               typ => DBMS_CRYPTO.AES_CBC_PKCS5,
+               typ => SYS.DBMS_CRYPTO.AES_CBC_PKCS5,
                key => v_key,
                iv  => p_iv
              );
@@ -235,7 +230,7 @@ END;
 
 -- Enfermedades en finca
 CREATE OR REPLACE TRIGGER TRG_FARM_DISEASES_SENASA
-AFTER INSERT ON TBLS_FAR_X_DIS
+AFTER INSERT ON TBL_FAR_X_DIS
 FOR EACH ROW
 BEGIN
   PK_SENASA.capture_disease_case(:NEW.fxd_farms_id, :NEW.fxd_diseases_id);
@@ -258,14 +253,14 @@ FROM TBL_SENASA_CASES_ENC;
 -- GRANT SELECT ON V_SENASA_CASES_DEC TO SENASA_READ;
 
 -- Marca una plaga cuaren­tenaria/critica
-UPDATE TBL_PESTS SET pes_senasa_impact = 'CUARENTENARIA' WHERE pes_id = 1;
+-- UPDATE TBL_PESTS SET pes_senasa_impact = 'CUARENTENARIA' WHERE pes_id = 1;
 
--- Relaciona la plaga a una finca
-INSERT INTO TBL_FARM_X_PESTS (fxp_farms_id, fxp_pests_id) VALUES (10, 1);
+-- -- Relaciona la plaga a una finca
+-- INSERT INTO TBL_FARM_X_PESTS (fxp_farms_id, fxp_pests_id) VALUES (10, 1);
 
--- Debe haber insert en la tabla encriptada
-SELECT sca_id, sca_type, sca_entity_id, sca_farm_id, sca_producer_id, sca_iv FROM TBL_SENASA_CASES_ENC;
+-- -- Debe haber insert en la tabla encriptada
+-- SELECT sca_id, sca_type, sca_entity_id, sca_farm_id, sca_producer_id, sca_iv FROM TBL_SENASA_CASES_ENC;
 
--- (Si creaste la vista)
-SELECT * FROM V_SENASA_CASES_DEC;  -- solo con permisos
+-- -- (Si creaste la vista)
+-- SELECT * FROM V_SENASA_CASES_DEC;  -- solo con permisos
 

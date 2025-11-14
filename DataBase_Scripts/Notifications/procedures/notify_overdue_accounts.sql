@@ -1,4 +1,6 @@
-CREATE OR REPLACE PROCEDURE pcr_notify_overdue_accounts AS
+CREATE OR REPLACE PROCEDURE pcr_notify_overdue_accounts 
+AUTHID CURRENT_USER  -- Añadir esta línea para permisos
+AS
     CURSOR c_overdue_accounts IS
         SELECT 
             a.acc_id,
@@ -14,7 +16,7 @@ CREATE OR REPLACE PROCEDURE pcr_notify_overdue_accounts AS
         JOIN TBL_PRODUCERS p ON per.per_id = p.pro_person_id
         JOIN TBL_PER_X_CON pxc ON per.per_id = pxc.pxc_person_id
         JOIN TBL_CONTACTS con ON pxc.pxc_contact_id = con.con_id
-        WHERE a.acc_state = 'PAGADO'  -- Cambié a 'PAGADO' según tu CHECK constraint
+        WHERE a.acc_state = 'PAGADO'
           AND con.con_type = 'EMAIL'
           AND MONTHS_BETWEEN(SYSDATE, a.acc_date) > 1
           AND NOT EXISTS (
@@ -24,6 +26,9 @@ CREATE OR REPLACE PROCEDURE pcr_notify_overdue_accounts AS
                 AND TRUNC(nol.nol_sent_date) = TRUNC(SYSDATE)
           );
     
+    -- Declarar record variable explícitamente
+    rec c_overdue_accounts%ROWTYPE;
+    
     v_subject VARCHAR2(200);
     v_message CLOB;
     v_success_count NUMBER := 0;
@@ -32,7 +37,11 @@ BEGIN
     DBMS_OUTPUT.PUT_LINE('Iniciando notificación de cuentas pendientes...');
     DBMS_OUTPUT.PUT_LINE('Fecha: ' || TO_CHAR(SYSDATE, 'DD/MM/YYYY HH24:MI:SS'));
     
-    FOR rec IN c_overdue_accounts LOOP
+    OPEN c_overdue_accounts;
+    LOOP
+        FETCH c_overdue_accounts INTO rec;
+        EXIT WHEN c_overdue_accounts%NOTFOUND;
+        
         BEGIN
             -- Construir asunto y mensaje
             v_subject := 'Recordatorio de Cuenta Pendiente - ' || rec.months_overdue || ' mes(es) de antigüedad';
@@ -51,7 +60,7 @@ BEGIN
                 '---' || CHR(10) ||
                 'Este es un mensaje automático, por favor no responda.';
             
-            -- Enviar email
+            -- Enviar email (asegúrate de que este procedimiento existe y tienes permisos)
             pcr_send_email(
                 p_recipient => rec.email,
                 p_subject => v_subject,
@@ -61,10 +70,10 @@ BEGIN
             -- Registrar en log
             INSERT INTO TBL_NOTIFICATION_LOG (
                 nol_id, nol_account_id, nol_producer_id, 
-                nol_notification_type, nol_status
+                nol_notification_type, nol_status, nol_sent_date
             ) VALUES (
                 seq_notification_log.NEXTVAL, rec.acc_id, rec.pro_id,
-                'OVERDUE_ACCOUNT', 'ENVIADO'
+                'OVERDUE_ACCOUNT', 'ENVIADO', SYSDATE
             );
             
             v_success_count := v_success_count + 1;
@@ -77,10 +86,10 @@ BEGIN
                 -- Registrar error en log
                 INSERT INTO TBL_NOTIFICATION_LOG (
                     nol_id, nol_account_id, nol_producer_id, 
-                    nol_notification_type, nol_status, nol_error_message
+                    nol_notification_type, nol_status, nol_error_message, nol_sent_date
                 ) VALUES (
                     seq_notification_log.NEXTVAL, rec.acc_id, rec.pro_id,
-                    'OVERDUE_ACCOUNT', 'ERROR', SQLERRM
+                    'OVERDUE_ACCOUNT', 'ERROR', SQLERRM, SYSDATE
                 );
                 
                 v_error_count := v_error_count + 1;
@@ -88,6 +97,7 @@ BEGIN
                                    ': ' || SQLERRM);
         END;
     END LOOP;
+    CLOSE c_overdue_accounts;
     
     -- Resumen final
     DBMS_OUTPUT.PUT_LINE('=================================');
@@ -100,6 +110,9 @@ BEGIN
     
 EXCEPTION
     WHEN OTHERS THEN
+        IF c_overdue_accounts%ISOPEN THEN
+            CLOSE c_overdue_accounts;
+        END IF;
         ROLLBACK;
         DBMS_OUTPUT.PUT_LINE('Error crítico en el proceso: ' || SQLERRM);
         RAISE;

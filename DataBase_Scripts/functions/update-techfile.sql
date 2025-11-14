@@ -2,6 +2,10 @@
 -- Cada vez que se incluya una inspeccion nueva si contiene
 -- datos nuevos deben de actualizarse en el expediente tecnico.
 -- =========================================
+create SEQUENCE SEQ_ENVIRONMENTALS_DATA
+START WITH 1
+INCREMENT BY 1;
+
 CREATE OR REPLACE TRIGGER TRG_FIELD_INSPECTION_UPDATE_TEF
 AFTER INSERT ON TBL_FIELD_INSPECTIONS
 FOR EACH ROW

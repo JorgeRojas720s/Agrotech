@@ -22,14 +22,12 @@ END;
 
 -- Ejecutar fases modulares
 @phases/phase_1_structure.sql
+@phases/phase_5_logbooks.sql
+@phases/phase_8_notifications.sql
 @phases/phase_2_tablespaces.sql
 @phases/phase_3_functions.sql
-@phases/phase_4_security.sql
-@phases/phase_5_logbooks.sql
 @phases/phase_6_logs_tablespace.sql
 @phases/phase_7_triggers.sql
-@phases/phase_8_notifications.sql
-@phases/phase_9_jobs.sql
 @phases/phase_10_verification.sql
 
 -- Finalización
